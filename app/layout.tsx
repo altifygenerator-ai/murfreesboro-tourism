@@ -138,7 +138,7 @@ export const metadata: Metadata = {
     images: [ogImage],
   },
 
-  robots: {
+    robots: {
     index: true,
     follow: true,
     googleBot: {
@@ -148,6 +148,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
+  },
+
+  verification: {
+    google: "WMZrHmR5dQ0tZ1zlRlNuQOH4swP97eaYlkGX14ubTFo",
   },
 
   category: "travel",
