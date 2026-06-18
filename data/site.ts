@@ -99,6 +99,7 @@ export const navLinks = {
   sisterSites,
 };
 export const imagePaths = {
+  heroHome: "/images/murfreesboro/crater-of-diamonds.webp",
   crater: "/images/murfreesboro/crater-of-diamonds-diamond.avif",
   lake: "/images/murfreesboro/lake-greeson.jpg",
   swaha: "/images/murfreesboro/swaha-marina.jpg",
@@ -114,7 +115,8 @@ export const imagePaths = {
   shopping: "/images/murfreesboro/shopping.png",
   bearcreek: "/images/murfreesboro/bear-creek.jpg",
   bearcreekTrail: "/images/murfreesboro/bear-creek-ride.avif",
-  littleMissouriRiver: "/images/murfreesboro/little-missouri-river.jpg"
+  littleMissouriRiver: "/images/murfreesboro/little-missouri-river.jpg",
+  caddoRiver: "/images/murfreesboro/caddo-river.avif",
 };
 
 export const quickLinks = [

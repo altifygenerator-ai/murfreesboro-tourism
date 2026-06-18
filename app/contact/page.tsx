@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContactAdvertisingForm from "@/components/ContactAdvertisingForm";
+import ContactSuggestionForm from "@/components/ContactSuggestionForm";
 
 export const metadata: Metadata = {
   title:
@@ -116,7 +117,9 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <ContactAdvertisingForm />
+            <div id="advertising-form">
+  <ContactAdvertisingForm />
+</div>
           </div>
         </div>
       </section>
@@ -134,32 +137,36 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-8 grid gap-5 lg:grid-cols-3">
-            {listingOptions.map((option) => (
-              <article
-                key={option.title}
-                className="flex h-full flex-col rounded-2xl border border-black/10 bg-white p-6 shadow-sm"
-              >
-                <div>
-                  <h3 className="text-xl font-black text-[color:var(--color-text)]">
-                    {option.title}
-                  </h3>
-                  <p className="mt-1 text-sm font-bold text-[color:var(--color-accent)]">
-                    {option.price}
-                  </p>
-                  <p className="mt-4 text-sm leading-7 text-[color:var(--color-muted)]">
-                    {option.text}
-                  </p>
-                </div>
+  {listingOptions.map((option) => (
+    <article
+      key={option.title}
+      className="flex h-full flex-col rounded-2xl border border-black/10 bg-white p-6 shadow-sm"
+    >
+      <div>
+        <h3 className="text-xl font-black text-[color:var(--color-text)]">
+          {option.title}
+        </h3>
 
-                <a
-                  href="#advertising-form"
-                  className="mt-6 inline-flex items-center justify-center rounded-full border border-black/10 px-4 py-2.5 text-sm font-bold text-[color:var(--color-text)] transition hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)]"
-                >
-                  {option.cta}
-                </a>
-              </article>
-            ))}
-          </div>
+        <p className="mt-1 text-sm font-bold text-[color:var(--color-accent)]">
+          {option.price}
+        </p>
+
+        <p className="mt-4 text-sm leading-7 text-[color:var(--color-muted)]">
+          {option.text}
+        </p>
+      </div>
+
+      <div className="mt-auto pt-6">
+        <a
+          href="#advertising-form"
+          className="inline-flex w-full items-center justify-center rounded-full border border-black/10 px-4 py-2.5 text-sm font-bold text-[color:var(--color-text)] transition hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)]"
+        >
+          {option.cta}
+        </a>
+      </div>
+    </article>
+  ))}
+</div>
 
           <p className="mx-auto mt-6 max-w-3xl text-center text-xs leading-6 text-[color:var(--color-muted)]">
             Featured placement depends on fit, page layout, and available space.
@@ -194,48 +201,76 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+<section className="section pt-0">
+  <div className="container">
+    <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+      <div>
+        <p className="eyebrow">Local Suggestions</p>
 
+        <h2 className="section-title">
+          Help fill out the Murfreesboro guide.
+        </h2>
+
+        <p className="section-lead mt-4">
+          Know a restaurant, cabin, shop, family stop, fishing guide, lake
+          access point, or local business visitors should know about? Send it
+          over and it can be reviewed for the guide.
+        </p>
+
+        <p className="mt-5 text-sm leading-7 text-[color:var(--color-muted)]">
+          Suggestions are helpful for keeping the guide local and useful. Not
+          every suggestion will be added, but local input helps make the pages
+          better for real visitors planning around Crater of Diamonds, Lake
+          Greeson, Murfreesboro, Kirby, Daisy, and nearby southwest Arkansas.
+        </p>
+      </div>
+
+      <ContactSuggestionForm />
+    </div>
+  </div>
+</section>
       <section className="section pt-0">
-        <div className="container">
-          <div className="rounded-[2rem] border border-black/10 bg-[color:var(--color-accent-dark)] p-7 text-white shadow-xl md:p-10">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.22em] text-white/65">
-                  Local Visibility
-                </p>
-                <h2 className="mt-3 font-heading text-4xl font-black leading-tight md:text-5xl">
-                  Get found while visitors are planning where to go.
-                </h2>
-              </div>
+  <div className="container">
+    <div className="rounded-[2rem] border border-black/10 bg-[color:var(--color-accent-dark)] p-7 text-white shadow-xl md:p-10">
+      <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.22em] !text-white/70">
+            Local Visibility
+          </p>
 
-              <div>
-                <p className="text-base leading-8 text-white/82">
-                  This is not a giant ad network or a generic directory. The
-                  Murfreesboro guide is built around real trip planning:
-                  Crater of Diamonds, Lake Greeson, food stops, places to stay,
-                  supplies, outdoor recreation, and nearby day trips.
-                </p>
+          <h2 className="mt-3 font-heading text-4xl font-black leading-tight !text-white md:text-5xl">
+            Get found while visitors are planning where to go.
+          </h2>
+        </div>
 
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <a
-                    href="#advertising-form"
-                    className="rounded-full bg-white px-5 py-3 text-sm font-black text-[color:var(--color-accent-dark)] transition hover:-translate-y-0.5 hover:shadow-lg"
-                  >
-                    Request Info
-                  </a>
+        <div>
+          <p className="text-base leading-8 !text-white/85">
+            This is not a giant ad network or a generic directory. The
+            Murfreesboro guide is built around real trip planning:
+            Crater of Diamonds, Lake Greeson, food stops, places to stay,
+            supplies, outdoor recreation, and nearby day trips.
+          </p>
 
-                  <Link
-                    href="/things-to-do-in-murfreesboro-arkansas"
-                    className="rounded-full border border-white/25 px-5 py-3 text-sm font-black text-white transition hover:bg-white/10"
-                  >
-                    View The Guide
-                  </Link>
-                </div>
-              </div>
-            </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href="#advertising-form"
+              className="rounded-full bg-white px-5 py-3 text-sm font-black text-[color:var(--color-accent-dark)] transition hover:-translate-y-0.5 hover:shadow-lg"
+            >
+              Request Info
+            </a>
+
+            <Link
+              href="/things-to-do-in-murfreesboro-arkansas"
+              className="rounded-full border border-white/25 px-5 py-3 text-sm font-black !text-white transition hover:bg-white/10"
+            >
+              View The Guide
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }

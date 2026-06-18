@@ -58,7 +58,7 @@ export default function Home() {
         eyebrow="Murfreesboro Arkansas Guide"
         title="Plan around diamonds, Lake Greeson, cabins, and small-town Arkansas days."
         text="A practical visitor guide for Murfreesboro, Crater of Diamonds State Park, Lake Greeson, Swaha, Dam Grill, Ka-Do-Ha, restaurants, cabins, RV stays, and nearby southwest Arkansas day trips."
-        image={imagePaths.crater}
+        image={imagePaths.heroHome}
         primary={{ href: "/crater-of-diamonds-guide", label: "Crater of Diamonds Guide" }}
         secondary={{ href: "/lake-greeson", label: "Lake Greeson" }}
       />

@@ -395,7 +395,7 @@ const guideDepth: Record<string, DepthData> = {
         title: "Glenwood and the Caddo River fit when you want another water-town day.",
         text:
           "Glenwood pairs naturally with Murfreesboro because both towns fit outdoor weekends, cabins, local food, and slower Arkansas travel. It is a good direction when your trip is already about water and small-town stops.",
-        image: imagePaths.dayTrips,
+        image: imagePaths.caddoRiver,
         href: "https://www.glenwoodarkansas.org",
         linkLabel: "Visit Glenwood guide",
         notes: [

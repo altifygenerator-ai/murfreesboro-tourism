@@ -33,7 +33,7 @@ const featuredStayPlacement = {
   type: "Reserved Local Feature",
   description:
     "This feature space is set aside for a Murfreesboro-area cabin, RV park, campground, lake stay, or visitor-friendly lodging option that fits naturally with Crater of Diamonds, Lake Greeson, and southwest Arkansas trip planning.",
-  image: imagePaths.cabins,
+  image: imagePaths.downtown,
   href: "/contact",
 };
 
@@ -119,7 +119,7 @@ export default function CabinsPage() {
             <div className="card overflow-hidden">
               <div className="image-card h-[360px]">
                 <Image
-                  src={imagePaths.cabins}
+                  src={imagePaths.swaha}
                   alt="Cabins and RV stays near Murfreesboro Arkansas and Lake Greeson"
                   width={1100}
                   height={750}

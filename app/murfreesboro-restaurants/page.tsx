@@ -28,7 +28,7 @@ const featuredRestaurantPlacement = {
   type: "Reserved Local Feature",
   description:
     "This feature space is set aside for a Murfreesboro-area restaurant, cafe, food stop, or lake-area dining option that fits naturally with Crater of Diamonds, Lake Greeson, and local trip planning.",
-  image: imagePaths.damGrill,
+  image: imagePaths.downtown,
   href: "/contact",
 };
 
@@ -113,7 +113,7 @@ export default function RestaurantsPage() {
             <div className="card overflow-hidden">
               <div className="image-card h-[360px]">
                 <Image
-                  src={imagePaths.damGrill}
+                  src={imagePaths.downtownPage}
                   alt="Food and restaurants around Murfreesboro Arkansas and Lake Greeson"
                   width={1100}
                   height={750}

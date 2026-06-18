@@ -8,55 +8,136 @@ import Footer from "@/components/layout/Footer";
 import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-heading" });
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+const siteUrl = "https://murfreesboroarkansas.org";
+
+const title =
+  "Murfreesboro Arkansas Guide | Crater of Diamonds, Lake Greeson & Local Trips";
+
+const description =
+  "Plan a Murfreesboro, Arkansas trip around Crater of Diamonds State Park, Lake Greeson, cabins, restaurants, local shops, family stops, fishing, camping, and nearby southwest Arkansas day trips.";
+
+const ogImage = "/images/murfreesboro/og-murfreesboro-arkansas-guide.png";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.domain),
+  metadataBase: new URL(siteUrl),
+
   title: {
-    default: "Murfreesboro Arkansas Guide | Crater of Diamonds, Lake Greeson & Local Trips",
+    default: title,
     template: "%s | Murfreesboro Arkansas Guide",
   },
-  description: site.description,
+
+  description,
+
   keywords: [
     "Murfreesboro Arkansas",
-    "Crater of Diamonds State Park",
-    "Lake Greeson",
+    "Murfreesboro AR",
+    "Murfreesboro Arkansas guide",
+    "Murfreesboro Arkansas travel guide",
+    "visit Murfreesboro Arkansas",
     "things to do in Murfreesboro Arkansas",
-    "Murfreesboro Arkansas cabins",
-    "Murfreesboro Arkansas restaurants",
+    "things to do near Murfreesboro Arkansas",
+
+    "Crater of Diamonds",
+    "Crater of Diamonds State Park",
+    "Crater of Diamonds guide",
+    "Crater of Diamonds Arkansas",
+    "Crater of Diamonds Murfreesboro Arkansas",
     "things to do near Crater of Diamonds",
+    "cabins near Crater of Diamonds",
+    "restaurants near Crater of Diamonds",
+    "diamond digging Arkansas",
+    "diamond digging Murfreesboro Arkansas",
+    "what to bring to Crater of Diamonds",
+
+    "Lake Greeson",
+    "Lake Greeson Arkansas",
+    "Lake Greeson Murfreesboro Arkansas",
     "Lake Greeson cabins",
+    "Lake Greeson camping",
+    "Lake Greeson fishing",
+    "Lake Greeson boating",
+    "Lake Greeson marina",
     "Swaha Lodge N Marina",
     "Dam Grill Lake Greeson",
+    "Self Creek Lodge and Marina",
+    "Narrows Dam",
+    "Little Missouri River",
+    "Little Missouri River Arkansas",
+    "Narrows Tailwater",
+
+    "Murfreesboro Arkansas cabins",
+    "Murfreesboro Arkansas RV parks",
+    "Murfreesboro Arkansas campgrounds",
+    "Murfreesboro Arkansas hotels",
+    "places to stay in Murfreesboro Arkansas",
+    "Murfreesboro Arkansas vacation rentals",
+
+    "Murfreesboro Arkansas restaurants",
+    "Murfreesboro Arkansas food",
+    "Telinga's Murfreesboro",
+    "Feed Bin Cafe Murfreesboro",
+    "Pizza Inn Murfreesboro Arkansas",
+
     "Ka-Do-Ha Indian Village",
+    "Daisy State Park",
+    "Bear Creek Cycle Trail",
+    "Murfreesboro Arkansas shopping",
+    "Murfreesboro Arkansas local businesses",
+    "Murfreesboro Arkansas souvenirs",
+    "diamond digging supplies",
+
     "Arkansas family trip",
+    "Arkansas weekend trip",
+    "southwest Arkansas travel",
+    "southwest Arkansas guide",
+    "Arkansas lake weekend",
+    "Arkansas cabins",
+    "Arkansas state parks",
+    "family things to do in Arkansas",
+    "day trips from Murfreesboro Arkansas",
+    "Kirby Arkansas",
+    "Daisy Arkansas",
+    "Delight Arkansas",
   ],
+
   authors: [{ name: "Murfreesboro Arkansas Guide" }],
   creator: "Natural State Tourism Project",
   publisher: "Natural State Tourism Project",
-  alternates: { canonical: site.domain },
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "Murfreesboro Arkansas Guide | Crater of Diamonds & Lake Greeson",
-    description: site.description,
-    url: site.domain,
+    title,
+    description,
+    url: siteUrl,
     siteName: "Murfreesboro Arkansas Guide",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Murfreesboro Arkansas travel guide for Crater of Diamonds and Lake Greeson",
+        alt: "Murfreesboro Arkansas guide for Crater of Diamonds, Lake Greeson, cabins, restaurants, and local trip planning",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Murfreesboro Arkansas Guide",
-    description: site.description,
-    images: ["/images/og-image.png"],
+    description,
+    images: [ogImage],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -68,6 +149,8 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+
+  category: "travel",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
