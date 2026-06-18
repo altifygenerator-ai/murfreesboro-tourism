@@ -19,9 +19,18 @@ export default function Hero({
 }) {
   return (
     <section className="relative flex min-h-[720px] items-end overflow-hidden dark-section">
-      <Image src={image} alt={title} fill priority sizes="100vw" className="object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/58 to-black/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/84 via-transparent to-transparent" />
+      <Image
+        src={image}
+        alt={title}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/18" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/66 to-black/35" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/20 to-transparent" />
 
       <div className="container relative z-10 pb-16 pt-32">
         <div className="max-w-5xl">
@@ -33,7 +42,7 @@ export default function Hero({
             {title}
           </h1>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 !text-white/85 md:text-xl">
+          <p className="mt-7 max-w-2xl text-lg leading-8 !text-white/90 md:text-xl">
             {text}
           </p>
 
@@ -58,7 +67,6 @@ export default function Hero({
   );
 }
 
-
 function HeroLink({
   href,
   className,
@@ -70,7 +78,12 @@ function HeroLink({
 }) {
   if (href.startsWith("http") || href.startsWith("mailto:")) {
     return (
-      <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className={className}>
+      <a
+        href={href}
+        target={href.startsWith("http") ? "_blank" : undefined}
+        rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+        className={className}
+      >
         {children}
       </a>
     );

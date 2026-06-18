@@ -39,7 +39,7 @@ export default function LocalBusinessesPage() {
         eyebrow="Local Businesses"
         title="Food, stays, supplies, outdoor stops, and local businesses around Murfreesboro."
         text="This page keeps the practical local pieces in one place, especially for visitors planning around Crater of Diamonds, Lake Greeson, cabin stays, camping, restaurants, supplies, and nearby outdoor stops."
-        image={imagePaths.downtown}
+        image={imagePaths.downtownPage}
         primary={{ href: "/murfreesboro-restaurants", label: "Restaurants" }}
         secondary={{ href: "/murfreesboro-cabins", label: "Cabins & Stays" }}
       />
@@ -54,20 +54,19 @@ export default function LocalBusinessesPage() {
           A stronger spot for one local business that fits the guide.
         </h2>
 
-        <p className="mt-5 leading-8 text-[color:var(--color-muted)]">
-          Most businesses in the guide are listed where they naturally help
-          visitors plan a trip. This larger feature space is set aside for a
-          local business that wants more visibility, more room to tell people
-          what they offer, and a better position on a page visitors are already
-          using.
-        </p>
+  <p className="mt-5 leading-8 text-[color:var(--color-muted)]">
+  This larger feature area is set aside for one local business that belongs
+  naturally in the Murfreesboro travel guide. It gives visitors a closer look at
+  a place that may help shape their trip, whether they are coming for diamonds,
+  lake time, food, lodging, shopping, or a family weekend.
+</p>
 
-        <p className="mt-4 leading-8 text-[color:var(--color-muted)]">
-          It works well for lodging, restaurants, local shops, attractions,
-          outdoor recreation, rentals, guides, lake-area businesses, and
-          visitor-friendly services around Murfreesboro, Crater of Diamonds,
-          Lake Greeson, Kirby, Daisy, or nearby southwest Arkansas.
-        </p>
+<p className="mt-4 leading-8 text-[color:var(--color-muted)]">
+  It is a good fit for cabins, RV stays, restaurants, shops, attractions,
+  outdoor recreation, rentals, lake-area stops, and local services that help
+  visitors make the most of Murfreesboro, Crater of Diamonds, Lake Greeson, and
+  the surrounding area.
+</p>
 
         <Link href="/contact" className="btn-primary mt-7">
           Ask About Featured Placement
@@ -93,13 +92,13 @@ export default function LocalBusinessesPage() {
             Featured Local Business Space
           </h3>
 
-          <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
-            This spot is available for one local business that wants a more
-            visible placement in the Murfreesboro Arkansas Guide. The final
-            feature can include a stronger photo, a more detailed write-up,
-            direct links, and placement that helps visitors notice the business
-            while planning their trip.
-          </p>
+        <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
+  This reserved feature space is set aside for a Murfreesboro-area business
+  that fits naturally with visitor planning. It could highlight a local stay,
+  restaurant, shop, attraction, outdoor stop, rental, or service that helps
+  people make the most of a Crater of Diamonds, Lake Greeson, or southwest
+  Arkansas trip.
+</p>
 
           <span className="mt-6 inline-block text-sm font-black text-[color:var(--color-accent)]">
             Featured placement currently available →
@@ -112,11 +111,11 @@ export default function LocalBusinessesPage() {
 
       <section className="section bg-white/30">
         <div className="container">
-          <SectionHeading
-            eyebrow="Basic Listings"
-            title="Local stops grouped by how visitors actually use them."
-            text="These are standard guide listings, not full spotlight pages. They are here because they help with food, lodging, supplies, attractions, lake planning, outdoor recreation, or simple travel needs."
-          />
+       <SectionHeading
+  eyebrow="Local Businesses"
+  title="Restaurants, shops, stays, and useful stops around Murfreesboro."
+  text="Whether you are coming for Crater of Diamonds, spending time at Lake Greeson, staying in a cabin, or just passing through town, these local businesses are good places to keep on your radar."
+/>
 
           <div className="mt-10 space-y-10">
             {businessCategories.map((category) => {

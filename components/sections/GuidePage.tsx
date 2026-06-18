@@ -561,10 +561,10 @@ export default function GuidePage({ data }: { data: GuidePageData }) {
           <div className="container">
            <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
   <SectionHeading
-    eyebrow="Nearby Stops"
-    title="Local places that can help this part of the trip go smoother."
-    text="These listings are included because they fit naturally with this guide. Some help with food, lodging, lake time, supplies, outdoor access, or a simple stop before heading back to the cabin, campground, park, or road home."
-  />
+  eyebrow="Nearby Stops"
+  title="A few local places that may come in handy."
+  text="Whether you need a meal, a cabin, supplies, lake access, or somewhere simple to stop before heading back out, these Murfreesboro-area businesses are useful to know about while you are planning."
+/>
 
               <div className="grid gap-4">
                 {relatedBusinesses.map((business) => (

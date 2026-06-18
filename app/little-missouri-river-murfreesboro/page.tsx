@@ -30,16 +30,7 @@ export default function LittleMissouriRiverPage() {
   eyebrow="Little Missouri River"
   title="Fishing, tailwater access, and a quieter side of the Lake Greeson trip."
   text="The Little Missouri below Narrows Dam is one of those stops that makes more sense once you realize Murfreesboro is not just Crater of Diamonds. For anglers, campers, and lake visitors, it can add a slower outdoor stop to the trip, especially if you are already planning around Lake Greeson."
-  image={imagePaths.littleMissouri}
-  primary={{ href: "/lake-greeson", label: "Lake Greeson Guide" }}
-  secondary={{ href: "/murfreesboro-cabins", label: "Places To Stay" }}
-/>
-
-<Hero
-  eyebrow="Little Missouri River"
-  title="Fishing, tailwater water, and a quieter side of the Lake Greeson trip."
-  text="Down below Narrows Dam, the Little Missouri is a different kind of stop than Crater of Diamonds. It is better for folks who are fishing, camping, staying around Lake Greeson, or wanting a slower outdoor piece of the trip."
-  image={imagePaths.littleMissouri}
+  image={imagePaths.littleMissouriRiver}
   primary={{ href: "/lake-greeson", label: "Lake Greeson Guide" }}
   secondary={{ href: "/murfreesboro-cabins", label: "Places To Stay" }}
 />

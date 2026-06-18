@@ -22,6 +22,7 @@ export type LocalBusiness = {
   guideSlugs: string[];
 };
 
+
 export const featuredBusinessPlaceholder = {
   name: "Featured Local Business",
   type: "Featured Placement • Placeholder Card",
@@ -32,6 +33,7 @@ export const featuredBusinessPlaceholder = {
 };
 
 export const localBusinesses: LocalBusiness[] = [
+  
   {
     name: "Crater of Diamonds State Park",
     type: "Diamond Digging • State Park • Family Activity",

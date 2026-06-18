@@ -30,7 +30,7 @@ export default function BearCreekCycleTrailPage() {
         eyebrow="Lake Greeson Outdoor Guide"
         title="Bear Creek Cycle Trail is the riding side of a Lake Greeson trip."
         text="For ATV, UTV, and motorcycle riders, Bear Creek Cycle Trail is one of the reasons to look beyond Crater of Diamonds and plan the Murfreesboro area as a bigger outdoor weekend."
-        image={imagePaths.lake}
+        image={imagePaths.bearcreek}
         primary={{ href: "/lake-greeson", label: "Lake Greeson Guide" }}
         secondary={{ href: "/murfreesboro-local-businesses", label: "Local Businesses" }}
       />
@@ -91,7 +91,7 @@ export default function BearCreekCycleTrailPage() {
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="card overflow-hidden">
               <div className="image-card h-[360px]">
-                <Image src={imagePaths.lake} alt="Lake Greeson and Bear Creek Cycle Trail area" width={1100} height={750} />
+                <Image src={imagePaths.bearcreekTrail} alt="Lake Greeson and Bear Creek Cycle Trail area" width={1100} height={750} />
               </div>
             </div>
             <div>

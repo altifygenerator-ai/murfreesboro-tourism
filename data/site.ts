@@ -1,3 +1,5 @@
+import LittleMissouriRiverPage from "@/app/little-missouri-river-murfreesboro/page";
+
 export const site = {
   name: "Murfreesboro Arkansas Guide",
   shortName: "Murfreesboro Arkansas",
@@ -97,7 +99,7 @@ export const navLinks = {
   sisterSites,
 };
 export const imagePaths = {
-  crater: "/images/murfreesboro/crater-of-diamonds.webp",
+  crater: "/images/murfreesboro/crater-of-diamonds-diamond.avif",
   lake: "/images/murfreesboro/lake-greeson.jpg",
   swaha: "/images/murfreesboro/swaha-marina.jpg",
   damGrill: "/images/murfreesboro/dam-grill.png",
@@ -107,6 +109,12 @@ export const imagePaths = {
   cabins: "/images/murfreesboro/cabins-rv.webp",
   family: "/images/murfreesboro/family-trip.jpg",
   dayTrips: "/images/murfreesboro/day-trips.png",
+  nearbyCrater: "/images/murfreesboro/near-crater-of-diamonds.webp",
+  downtownPage: "/images/murfreesboro/downtown.jpg",
+  shopping: "/images/murfreesboro/shopping.png",
+  bearcreek: "/images/murfreesboro/bear-creek.jpg",
+  bearcreekTrail: "/images/murfreesboro/bear-creek-ride.avif",
+  littleMissouriRiver: "/images/murfreesboro/little-missouri-river.jpg"
 };
 
 export const quickLinks = [

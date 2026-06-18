@@ -284,12 +284,12 @@ export const nearCraterGuide: GuidePageData = {
     ],
   },
   hero: {
-    eyebrow: "Near Crater of Diamonds",
-    title: "Good nearby stops for after the field, before dinner, or a slower second day.",
-    text:
-      "Once the diamond digging is planned, the rest of the trip comes down to food, shade, water, places to stay, and a few local stops that fit the energy your group has left.",
-    image: imagePaths.family,
-  },
+  eyebrow: "Near Crater of Diamonds",
+  title: "Good nearby stops for after the field, before dinner, or a slower second day.",
+  text:
+    "Once the diamond digging is planned, the rest of the trip comes down to food, shade, water, places to stay, and a few local stops that fit the energy your group has left.",
+  image: imagePaths.nearbyCrater,
+},
   intro: {
     eyebrow: "After The Dig",
     title: "Crater of Diamonds is the anchor, but it does not have to be the whole trip.",

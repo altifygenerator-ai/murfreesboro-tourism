@@ -192,3 +192,9 @@ a {
     padding: 58px 0;
   }
 }
+
+/* Global breathing room below section headings before card grids */
+.section-heading + .grid,
+.section-heading + div.grid {
+  margin-top: clamp(2rem, 3vw, 3rem) !important;
+}
