@@ -44,13 +44,14 @@ export const thingsToDoGuide: GuidePageData = {
   metadata: {
     title: "Things To Do in Murfreesboro Arkansas | Crater of Diamonds, Lake Greeson & Local Stops",
     description:
-      "A practical guide to things to do in Murfreesboro, Arkansas, including Crater of Diamonds, Lake Greeson, Swaha, Dam Grill, Ka-Do-Ha, restaurants, cabins, family stops, and nearby day trips.",
+      "A practical guide to things to do in Murfreesboro, Arkansas, including Crater of Diamonds, Lake Greeson, Swaha, Dam Grill, Ka-Do-Ha, Dino Dig, restaurants, cabins, family stops, and nearby day trips.",
     keywords: [
       "things to do in Murfreesboro Arkansas",
       "Murfreesboro Arkansas attractions",
       "Crater of Diamonds",
       "Lake Greeson",
       "Ka-Do-Ha Indian Village",
+      "Dino Dig Murfreesboro Arkansas",
       "Swaha Lodge N Marina",
       "Murfreesboro family trip",
     ],
@@ -112,6 +113,13 @@ export const thingsToDoGuide: GuidePageData = {
       href: "/things-to-do-near-crater-of-diamonds",
     },
     {
+      title: "Dino Dig",
+      label: "Indoor Kids Dig • Gemstones • Backup Plan",
+      text:
+        "A climate-controlled family stop where kids can dig in sand for treasures and polished stones around dinosaur displays. It is a strong backup when heat, rain, or tired kids make another outdoor stop harder.",
+      href: "https://www.arkansas.com/experiences/discover/attraction-listings/dino-dig",
+    },
+    {
       title: "Swaha Lodge N Marina and Dam Grill",
       label: "Lake Greeson • Marina • Seasonal Food",
       text:
@@ -138,7 +146,7 @@ export const thingsToDoGuide: GuidePageData = {
     {
       question: "What are the main things to do in Murfreesboro, Arkansas?",
       answer:
-        "Most visitors plan around Crater of Diamonds State Park, Lake Greeson, Swaha Lodge N Marina, Ka-Do-Ha Indian Village, local restaurants, cabins, camping, and nearby drives toward Glenwood, Mount Ida, or Hot Springs.",
+        "Most visitors plan around Crater of Diamonds State Park, Lake Greeson, Swaha Lodge N Marina, Ka-Do-Ha Indian Village, Dino Dig, local restaurants, cabins, camping, and nearby drives toward Glenwood, Mount Ida, or Hot Springs.",
     },
     {
       question: "Is Murfreesboro good for a weekend trip?",
@@ -274,13 +282,14 @@ export const nearCraterGuide: GuidePageData = {
   metadata: {
     title: "Things To Do Near Crater of Diamonds | Murfreesboro Arkansas Guide",
     description:
-      "Find things to do near Crater of Diamonds State Park in Murfreesboro, Arkansas, including Lake Greeson, Ka-Do-Ha Indian Village, restaurants, cabins, family stops, and nearby day trips.",
+      "Find things to do near Crater of Diamonds State Park in Murfreesboro, Arkansas, including Lake Greeson, Ka-Do-Ha Indian Village, Dino Dig, restaurants, cabins, family stops, and nearby day trips.",
     keywords: [
       "things to do near Crater of Diamonds",
       "near Crater of Diamonds State Park",
       "Murfreesboro Arkansas things to do",
       "Lake Greeson near Crater of Diamonds",
       "Ka-Do-Ha Indian Village",
+      "Dino Dig near Crater of Diamonds",
     ],
   },
   hero: {
@@ -304,7 +313,7 @@ export const nearCraterGuide: GuidePageData = {
       title: "One good add-on is usually better than five rushed stops.",
       paragraphs: [
         "The diamond field can take a lot out of a group, especially in the heat. If you stack too much after it, the day starts to feel like a chore instead of a trip.",
-        "A better plan might be Crater of Diamonds, lunch, and a Lake Greeson stop. Or Crater of Diamonds, Ka-Do-Ha, and back to the cabin. That is enough for most families.",
+        "A better plan might be Crater of Diamonds, lunch, and a Lake Greeson stop. Or Crater of Diamonds, Dino Dig or Ka-Do-Ha, and back to the cabin. That is enough for most families.",
       ],
     },
     {
@@ -331,6 +340,13 @@ export const nearCraterGuide: GuidePageData = {
       href: "https://www.arkansas.com/experiences/discover/attraction-listings/ka-do-ha-indian-village",
     },
     {
+      title: "Dino Dig",
+      label: "Indoor Kids Activity • Gem Dig • Short Add-On",
+      text:
+        "A practical family add-on near the Crater trip, especially when younger kids still want to dig but parents need shade, air conditioning, and something easier than another outdoor stop.",
+      href: "https://www.arkansas.com/experiences/discover/attraction-listings/dino-dig",
+    },
+    {
       title: "Murfreesboro Restaurants",
       label: "Food • Reset • Easy Meal",
       text:
@@ -351,10 +367,12 @@ export const nearCraterGuide: GuidePageData = {
     "Lake Greeson access, weather, and swimming conditions",
     "Whether your group needs a meal, nap, water break, or cabin reset",
     "Ka-Do-Ha current hours, admission, and season details",
+    "Dino Dig current hours, pricing, and activity details",
     "How much extra driving your group really wants after digging",
   ],
   goodFor: [
     "Families looking for one extra stop after Crater of Diamonds",
+    "Parents who want an indoor backup after outdoor digging",
     "Visitors staying overnight around Murfreesboro",
     "People pairing a diamond trip with lake time",
     "Cabin guests planning two slower days instead of one rushed day",
@@ -363,7 +381,7 @@ export const nearCraterGuide: GuidePageData = {
     {
       question: "What is close to Crater of Diamonds?",
       answer:
-        "Lake Greeson, Ka-Do-Ha Indian Village, Murfreesboro restaurants, cabins, campgrounds, RV stays, and nearby day trips toward Glenwood and Mount Ida can all fit around a Crater of Diamonds trip.",
+        "Lake Greeson, Ka-Do-Ha Indian Village, Dino Dig, Murfreesboro restaurants, cabins, campgrounds, RV stays, and nearby day trips toward Glenwood and Mount Ida can all fit around a Crater of Diamonds trip.",
     },
     {
       question: "Should we add Lake Greeson after Crater of Diamonds?",
@@ -712,13 +730,14 @@ export const familyGuide: GuidePageData = {
   metadata: {
     title: "Murfreesboro Arkansas Family Trip Guide | Crater of Diamonds, Lake Greeson & Kids",
     description:
-      "Plan a family trip to Murfreesboro, Arkansas with practical tips for Crater of Diamonds, Lake Greeson, kids, cabins, food, heat, water, Ka-Do-Ha, and nearby day trips.",
+      "Plan a family trip to Murfreesboro, Arkansas with practical tips for Crater of Diamonds, Lake Greeson, kids, cabins, food, heat, water, Dino Dig, Ka-Do-Ha, and nearby day trips.",
     keywords: [
       "Murfreesboro Arkansas family trip",
       "Crater of Diamonds with kids",
       "Lake Greeson family trip",
       "family things to do in Murfreesboro Arkansas",
       "Arkansas family day trip",
+      "Dino Dig Murfreesboro",
     ],
   },
   hero: {
@@ -733,7 +752,7 @@ export const familyGuide: GuidePageData = {
     title: "Kids can love Murfreesboro, but the day needs room to breathe.",
     paragraphs: [
       "Crater of Diamonds gives kids something hands-on and different. Lake Greeson gives them water and space. A cabin or campground gives everyone a place to reset. Put those pieces together the right way, and Murfreesboro can be a solid family weekend.",
-      "The trick is not trying to do every stop. Pick the main activity, build in food and cleanup, then use the lake, Ka-Do-Ha, or a short local stop only if the group still has energy.",
+      "The trick is not trying to do every stop. Pick the main activity, build in food and cleanup, then use the lake, Dino Dig, Ka-Do-Ha, or a short local stop only if the group still has energy.",
     ],
   },
   sections: [
@@ -768,6 +787,13 @@ export const familyGuide: GuidePageData = {
       href: "/lake-greeson",
     },
     {
+      title: "Dino Dig",
+      label: "Indoor Digging • Polished Stones • Kids",
+      text:
+        "A useful indoor backup for families when the Crater field is too hot, rainy, or tiring, but the kids still want a hands-on treasure-digging stop.",
+      href: "https://www.arkansas.com/experiences/discover/attraction-listings/dino-dig",
+    },
+    {
       title: "Ka-Do-Ha Indian Village",
       label: "Shorter Educational Stop",
       text:
@@ -779,6 +805,7 @@ export const familyGuide: GuidePageData = {
     "Heat, rain, mud, and field conditions",
     "Crater of Diamonds hours, admission, and tool rules",
     "Water park season and hours if that is part of the plan",
+    "Dino Dig hours and pricing if that is your indoor backup stop",
     "Lake access, swimming rules, and weather",
     "Restaurant hours before the kids are starving",
     "Cabin, campground, or RV check-in details",
@@ -799,7 +826,7 @@ export const familyGuide: GuidePageData = {
     {
       question: "What else can families do near Murfreesboro?",
       answer:
-        "Families can add Lake Greeson, Ka-Do-Ha Indian Village, local restaurants, cabins, camping, and nearby day trips depending on energy, weather, and how long they are staying.",
+        "Families can add Lake Greeson, Dino Dig, Ka-Do-Ha Indian Village, local restaurants, cabins, camping, and nearby day trips depending on energy, weather, and how long they are staying.",
     },
   ],
   related: [

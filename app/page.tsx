@@ -5,6 +5,7 @@ import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import FAQList from "@/components/ui/FAQList";
+import RecentUpdates from "@/components/RecentUpdates";
 import {
   attractions,
   homeFaqs,
@@ -62,7 +63,7 @@ export default function Home() {
         primary={{ href: "/crater-of-diamonds-guide", label: "Crater of Diamonds Guide" }}
         secondary={{ href: "/lake-greeson", label: "Lake Greeson" }}
       />
-
+  <RecentUpdates />
       <section className="section">
         <div className="container">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">

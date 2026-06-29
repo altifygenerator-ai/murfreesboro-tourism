@@ -90,6 +90,25 @@ export const localBusinesses: LocalBusiness[] = [
     guideSlugs: ["things-to-do-near-crater-of-diamonds", "things-to-do-in-murfreesboro-arkansas", "murfreesboro-family-trip"],
   },
   {
+    name: "Dino Dig",
+    type: "Indoor Digging • Polished Stones • Kids Stop",
+    category: "attraction",
+    area: "Murfreesboro",
+    description:
+      "A climate-controlled indoor digging stop where kids can hunt for treasures and polished stones in sand around dinosaur displays. It is a good family backup near Crater of Diamonds when heat, rain, or tired kids make another outdoor stop harder.",
+    href: "https://www.arkansas.com/experiences/discover/attraction-listings/dino-dig",
+    guideHref: "/murfreesboro-family-trip",
+    phone: "870-285-3466",
+    address: "1124 North Washington, Murfreesboro, AR 71958",
+    note: "Arkansas Tourism lists all-day digging at $10, with a take-home bag for found treasures. Check current hours, pricing, and details before planning around it.",
+    guideSlugs: [
+      "murfreesboro-family-trip",
+      "things-to-do-near-crater-of-diamonds",
+      "things-to-do-in-murfreesboro-arkansas",
+      "murfreesboro-local-businesses",
+    ],
+  },
+  {
     name: "Telinga's Mexican Restaurant",
     type: "Mexican Restaurant • Local Food",
     category: "food",
@@ -604,21 +623,6 @@ export const localBusinesses: LocalBusiness[] = [
   ],
 },
 {
-  name: "Dino Dig",
-  type: "Family Activity • Rockhounding • Kids Stop",
-  category: "attraction",
-  area: "Murfreesboro",
-  description:
-    "A kid-friendly digging and rockhounding-style stop that can fit families looking for another hands-on activity around the Crater of Diamonds trip.",
-  guideHref: "/murfreesboro-family-trip",
-  note: "Good as a family add-on. Check current hours, pricing, and activity details before planning around it.",
-  guideSlugs: [
-    "murfreesboro-family-trip",
-    "things-to-do-near-crater-of-diamonds",
-    "things-to-do-in-murfreesboro-arkansas",
-  ],
-},
-{
   name: "Ceramics by Telinga’s",
   type: "Ceramics • Local Shopping • Family Stop",
   category: "shopping",
@@ -660,6 +664,27 @@ export const localBusinesses: LocalBusiness[] = [
   guideSlugs: [
     "murfreesboro-shopping-supplies",
     "murfreesboro-local-businesses",
+  ],
+},
+{
+  name: "Bear Creek UTV Rentals & Repair",
+  type: "UTV Rentals • ATV Trails • Repairs • Outdoor Recreation",
+  category: "outdoor",
+  area: "Kirby / Lake Greeson / Bear Creek",
+  description:
+    "A locally owned outdoor recreation business offering family-friendly UTV rentals for the Bear Creek ATV trails around Lake Greeson, along with maintenance and repair services for UTVs, ATVs, and dirt bikes.",
+  href: "https://bearcreekutv.com/",
+  guideHref: "/bear-creek-cycle-trail",
+  phone: "870-828-3093",
+  address: "Kirby, AR",
+  note:
+    "Good fit for visitors planning a Lake Greeson, Bear Creek, Kirby, Daisy, or Murfreesboro-area outdoor trip. Call ahead for rental availability, trail conditions, repair scheduling, and current pricing.",
+  guideSlugs: [
+    "bear-creek-cycle-trail",
+    "lake-greeson",
+    "day-trips-from-murfreesboro",
+    "things-to-do-in-murfreesboro-arkansas",
+    "murfreesboro-family-trip",
   ],
 },
 ];

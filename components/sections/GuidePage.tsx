@@ -65,13 +65,13 @@ const guideDepth: Record<string, DepthData> = {
         kicker: "Around Town",
         title: "Use the smaller stops to make the trip easier, not busier.",
         text:
-          "Local restaurants, Ka-Do-Ha, supplies, souvenirs, cabins, and short drives can all help round out the trip. They work best when they solve a real need, like lunch, shade, a backup plan, or something simple after the main stop.",
+          "Local restaurants, Dino Dig, Ka-Do-Ha, supplies, souvenirs, cabins, and short drives can all help round out the trip. They work best when they solve a real need, like lunch, shade, a backup plan, or something simple after the main stop.",
         image: imagePaths.downtown,
         href: "/murfreesboro-local-businesses",
         linkLabel: "Browse local businesses",
         notes: [
           "Know a couple food options before you head into the field.",
-          "Use local shops for forgotten basics, snacks, or souvenirs.",
+          "Use Dino Dig, local shops, or a town stop when the group needs something easier than another outdoor push.",
           "Save longer drives for another day instead of forcing them into a tired afternoon.",
         ],
       },
@@ -137,16 +137,16 @@ const guideDepth: Record<string, DepthData> = {
     cards: [
       {
         kicker: "Short Add-On",
-        title: "Ka-Do-Ha fits when you want one more local stop without a long drive.",
+        title: "Dino Dig and Ka-Do-Ha both work as shorter local add-ons.",
         text:
-          "Ka-Do-Ha gives visitors a Murfreesboro-area stop tied to local history, archeology, a museum, and hands-on exploring. It is a better fit when you still want to do something nearby but do not want to spend the afternoon on the road.",
+          "Dino Dig gives families an indoor, climate-controlled digging stop with polished stones and dinosaur displays, while Ka-Do-Ha keeps the trip tied to local history and archeology. Either one can work better than forcing a long drive after the Crater field.",
         image: imagePaths.kadoha,
         href: "/murfreesboro-local-businesses",
         linkLabel: "See local listings",
         notes: [
-          "Good for families who want something different from digging diamonds.",
-          "Check current hours and admission before going.",
-          "Pair it with lunch or a town stop instead of packing the day too tight.",
+          "Good for families who want another hands-on stop without leaving town.",
+          "Check current hours, admission, and pricing before going.",
+          "Pair one short stop with lunch or a town stop instead of packing the day too tight.",
         ],
       },
       {
@@ -371,7 +371,7 @@ const guideDepth: Record<string, DepthData> = {
         kicker: "Backup Plan",
         title: "Keep one easy backup idea in your pocket.",
         text:
-          "Weather, heat, and moods can change fast. A good backup might be lunch, a short local stop, souvenirs, a cabin break, or saving Lake Greeson for the next morning instead of forcing it late in the day.",
+          "Weather, heat, and moods can change fast. A good backup might be Dino Dig, lunch, a short local stop, souvenirs, a cabin break, or saving Lake Greeson for the next morning instead of forcing it late in the day.",
         image: imagePaths.downtown,
         href: "/things-to-do-near-crater-of-diamonds",
         linkLabel: "Nearby things to do",
