@@ -1,5 +1,3 @@
-import LittleMissouriRiverPage from "@/app/little-missouri-river-murfreesboro/page";
-
 export const site = {
   name: "Murfreesboro Arkansas Guide",
   shortName: "Murfreesboro Arkansas",

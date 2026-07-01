@@ -4,12 +4,13 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { localBusinesses } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
   title:
-    "Murfreesboro Arkansas Cabins, RV Parks & Places To Stay Near Crater of Diamonds",
+    "Murfreesboro Cabins, RV Parks & Places To Stay Near Crater of Diamonds",
   description:
     "Find cabins, RV parks, campgrounds, lake stays, and practical lodging tips for Murfreesboro, Arkansas near Crater of Diamonds and Lake Greeson.",
   keywords: [
@@ -64,6 +65,37 @@ const bookingChecks = [
 export default function CabinsPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Murfreesboro Cabins & Places To Stay",
+            description: metadata.description,
+            url: `${site.domain}/murfreesboro-cabins`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Cabins & Places To Stay", item: `${site.domain}/murfreesboro-cabins` },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Murfreesboro cabins, RV parks, and places to stay",
+            itemListElement: stayBusinesses.map((business, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: business.name,
+              url: business.href ?? `${site.domain}${business.guideHref ?? "/murfreesboro-cabins"}`,
+            })),
+          },
+        ]}
+      />
       <Hero
         eyebrow="Cabins & Places To Stay"
         title="Pick a stay that fits the dirt, water, gear, and tired people."

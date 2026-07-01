@@ -4,11 +4,12 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { businessCategories, featuredBusinessPlaceholder, localBusinesses, type LocalBusinessCategory } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
-  title: "Murfreesboro Arkansas Local Businesses | Food, Cabins, Shops, Outdoor Stops & Services",
+  title: "Murfreesboro Local Businesses | Food, Cabins, Shops & Outdoor Stops",
   description:
     "Browse basic local business listings for Murfreesboro, Arkansas including restaurants, cabins, RV parks, Lake Greeson stops, diamond digging supplies, shops, outdoor recreation, and visitor services.",
   keywords: [
@@ -35,6 +36,37 @@ const categoryNotes: Record<LocalBusinessCategory | "all", string> = {
 export default function LocalBusinessesPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Murfreesboro Arkansas Local Businesses",
+            description: metadata.description,
+            url: `${site.domain}/murfreesboro-local-businesses`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Local Businesses", item: `${site.domain}/murfreesboro-local-businesses` },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Murfreesboro visitor-friendly local businesses",
+            itemListElement: localBusinesses.map((business, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: business.name,
+              url: business.href ?? `${site.domain}${business.guideHref ?? "/murfreesboro-local-businesses"}`,
+            })),
+          },
+        ]}
+      />
       <Hero
         eyebrow="Local Businesses"
         title="Food, stays, supplies, outdoor stops, and local businesses around Murfreesboro."

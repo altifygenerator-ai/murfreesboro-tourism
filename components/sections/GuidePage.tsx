@@ -5,8 +5,9 @@ import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import FAQList from "@/components/ui/FAQList";
+import JsonLd from "@/components/JsonLd";
 import type { GuidePageData } from "@/data/guides";
-import { imagePaths } from "@/data/site";
+import { imagePaths, site } from "@/data/site";
 import { getBusinessesForGuide } from "@/data/localBusinesses";
 
 type DepthCard = {
@@ -440,33 +441,74 @@ const guideDepth: Record<string, DepthData> = {
 
 export default function GuidePage({ data }: { data: GuidePageData }) {
   const relatedBusinesses = getBusinessesForGuide(data.slug, 5);
+  const pageUrl = `${site.domain}/${data.slug}`;
 
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "TravelGuide",
-              name: data.metadata.title,
-              description: data.metadata.description,
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: data.metadata.title,
+            description: data.metadata.description,
+            url: pageUrl,
+            isPartOf: {
+              "@type": "WebSite",
+              name: site.name,
+              url: site.domain,
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: data.faqs.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: faq.answer,
-                },
-              })),
-            },
-          ]),
-        }}
+            about: [
+              "Murfreesboro Arkansas",
+              "Crater of Diamonds State Park",
+              "Lake Greeson",
+              "Southwest Arkansas travel",
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Murfreesboro Arkansas Guide",
+                item: site.domain,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: data.hero.eyebrow,
+                item: pageUrl,
+              },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: `${data.hero.eyebrow} planning stops`,
+            itemListElement: data.stops.map((stop, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: stop.title,
+              url: stop.href?.startsWith("http")
+                ? stop.href
+                : `${site.domain}${stop.href ?? `/${data.slug}`}`,
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: data.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          },
+        ]}
       />
 
       <Hero

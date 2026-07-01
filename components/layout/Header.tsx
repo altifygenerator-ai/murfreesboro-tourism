@@ -113,7 +113,7 @@ function Dropdown({
         {label} ▾
       </button>
 
-      <div className="absolute left-0 top-full hidden min-w-[270px] pt-3 group-hover:block">
+      <div className="absolute left-0 top-full z-50 hidden min-w-[270px] pt-3 group-hover:block">
         <div className="overflow-hidden rounded-xl border border-black/10 bg-[color:var(--bg-card)] py-2 text-[color:var(--color-text)] shadow-xl">
           {links.map((link) => (
             <NavItem key={link.href} href={link.href} label={link.label} />

@@ -4,12 +4,13 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { localBusinesses } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
   title:
-    "Murfreesboro Arkansas Shopping & Supplies | Diamond Digging Gear, Souvenirs and Local Stops",
+    "Murfreesboro Shopping & Supplies | Diamond Digging Gear & Local Stops",
   description:
     "A practical Murfreesboro shopping and supplies guide for Crater of Diamonds visitors, including diamond digging supplies, hardware, souvenirs, local shops, and check-ahead notes.",
   keywords: [
@@ -39,6 +40,37 @@ const featuredShoppingPlacement = {
 export default function ShoppingSuppliesPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Murfreesboro Arkansas Shopping & Supplies",
+            description: metadata.description,
+            url: `${site.domain}/murfreesboro-shopping-supplies`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Shopping & Supplies", item: `${site.domain}/murfreesboro-shopping-supplies` },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Murfreesboro shopping and supply stops",
+            itemListElement: shoppingBusinesses.map((business, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: business.name,
+              url: business.href ?? `${site.domain}${business.guideHref ?? "/murfreesboro-shopping-supplies"}`,
+            })),
+          },
+        ]}
+      />
       <Hero
         eyebrow="Shopping & Supplies"
         title="The small local stops that make a Crater of Diamonds trip easier."

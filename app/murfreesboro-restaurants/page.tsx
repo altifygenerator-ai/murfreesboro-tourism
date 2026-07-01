@@ -4,7 +4,8 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { guidePages } from "@/data/guides";
 import { localBusinesses } from "@/data/localBusinesses";
 
@@ -57,6 +58,37 @@ const foodSituations = [
 export default function RestaurantsPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: data.metadata.title,
+            description: data.metadata.description,
+            url: `${site.domain}/murfreesboro-restaurants`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Restaurants", item: `${site.domain}/murfreesboro-restaurants` },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Murfreesboro restaurants and food stops",
+            itemListElement: restaurantBusinesses.map((business, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: business.name,
+              url: business.href ?? `${site.domain}${business.guideHref ?? "/murfreesboro-restaurants"}`,
+            })),
+          },
+        ]}
+      />
       <Hero
         eyebrow="Restaurants & Food"
         title="Know where you might eat before everybody is hot, dusty, and done."

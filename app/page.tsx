@@ -5,6 +5,7 @@ import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import FAQList from "@/components/ui/FAQList";
+import JsonLd from "@/components/JsonLd";
 import RecentUpdates from "@/components/RecentUpdates";
 import {
   attractions,
@@ -22,37 +23,50 @@ import { localBusinesses } from "@/data/localBusinesses";
 export default function Home() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "TouristDestination",
-              name: "Murfreesboro, Arkansas",
-              description: site.description,
-              url: site.domain,
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "TouristDestination",
+            name: "Murfreesboro, Arkansas",
+            description: site.description,
+            url: site.domain,
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: site.name,
+            url: site.domain,
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `${site.domain}/search?q={search_term_string}`,
+              "query-input": "required name=search_term_string",
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: site.name,
-              url: site.domain,
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: homeFaqs.map((faq) => ({
-                "@type": "Question",
-                name: faq.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: faq.answer,
-                },
-              })),
-            },
-          ]),
-        }}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Murfreesboro Arkansas visitor guide pages",
+            itemListElement: quickLinks.map((link, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: link.title,
+              url: `${site.domain}${link.href}`,
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: homeFaqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          },
+        ]}
       />
 
       <Hero

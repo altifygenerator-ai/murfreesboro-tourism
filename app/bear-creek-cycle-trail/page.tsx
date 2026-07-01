@@ -4,11 +4,12 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { getBusinessesForGuide } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
-  title: "Bear Creek Cycle Trail near Lake Greeson | ATV and UTV Riding near Murfreesboro Arkansas",
+  title: "Bear Creek Cycle Trail near Lake Greeson | ATV & UTV Riding",
   description:
     "A practical Bear Creek Cycle Trail guide for Murfreesboro and Lake Greeson visitors planning ATV, UTV, motorcycle, camping, and outdoor recreation around Kirby, Daisy, and Bear Creek.",
   keywords: [
@@ -26,6 +27,27 @@ const relatedBusinesses = getBusinessesForGuide("bear-creek-cycle-trail", 6);
 export default function BearCreekCycleTrailPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Bear Creek Cycle Trail near Lake Greeson",
+            description: metadata.description,
+            url: `${site.domain}/bear-creek-cycle-trail`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+            about: ["Bear Creek Cycle Trail", "Lake Greeson", "Murfreesboro Arkansas outdoor recreation"],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Bear Creek Cycle Trail", item: `${site.domain}/bear-creek-cycle-trail` },
+            ],
+          },
+        ]}
+      />
       <Hero
         eyebrow="Lake Greeson Outdoor Guide"
         title="Bear Creek Cycle Trail is the riding side of a Lake Greeson trip."

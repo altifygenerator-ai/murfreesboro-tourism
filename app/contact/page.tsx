@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContactAdvertisingForm from "@/components/ContactAdvertisingForm";
 import ContactSuggestionForm from "@/components/ContactSuggestionForm";
+import JsonLd from "@/components/JsonLd";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title:
-    "Advertise Your Murfreesboro Arkansas Business | Natural State Tourism Project",
+    "Advertise Your Murfreesboro Business | Local Guide Listings",
   description:
     "Request listing, advertising, featured placement, or local spotlight information for the Murfreesboro Arkansas Guide covering Crater of Diamonds, Lake Greeson, restaurants, cabins, local shops, and visitor stops.",
   keywords: [
@@ -58,6 +60,30 @@ const businessTypes = [
 export default function ContactPage() {
   return (
     <main className="bg-[color:var(--color-bg)]">
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Advertise Your Murfreesboro Arkansas Business",
+            description: metadata.description,
+            url: `${site.domain}/contact`,
+            isPartOf: {
+              "@type": "WebSite",
+              name: site.name,
+              url: site.domain,
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Contact", item: `${site.domain}/contact` },
+            ],
+          },
+        ]}
+      />
       <section className="relative overflow-hidden border-b border-black/10 bg-[color:var(--color-bg-soft)]">
         <div className="absolute inset-0 opacity-[0.08]">
           <div className="absolute left-10 top-10 h-72 w-72 rounded-full bg-[color:var(--color-accent)] blur-3xl" />

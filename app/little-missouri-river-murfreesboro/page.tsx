@@ -4,11 +4,12 @@ import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
-import { imagePaths } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
+import { imagePaths, site } from "@/data/site";
 import { getBusinessesForGuide } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
-  title: "Little Missouri River near Murfreesboro Arkansas | Narrows Tailwater, Trout Fishing & Lake Greeson",
+  title: "Little Missouri River near Murfreesboro | Narrows Tailwater & Lake Greeson",
   description:
     "A practical guide to the Little Missouri River and Narrows Tailwater near Murfreesboro, Arkansas, including trout fishing, Lake Greeson, Narrows Dam, safety checks, and nearby trip planning.",
   keywords: [
@@ -26,6 +27,27 @@ const relatedBusinesses = getBusinessesForGuide("little-missouri-river-murfreesb
 export default function LittleMissouriRiverPage() {
   return (
     <main>
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Little Missouri River near Murfreesboro Arkansas",
+            description: metadata.description,
+            url: `${site.domain}/little-missouri-river-murfreesboro`,
+            isPartOf: { "@type": "WebSite", name: site.name, url: site.domain },
+            about: ["Little Missouri River", "Narrows Tailwater", "Lake Greeson", "Murfreesboro Arkansas fishing"],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: site.domain },
+              { "@type": "ListItem", position: 2, name: "Little Missouri River", item: `${site.domain}/little-missouri-river-murfreesboro` },
+            ],
+          },
+        ]}
+      />
       <Hero
   eyebrow="Little Missouri River"
   title="Fishing, tailwater access, and a quieter side of the Lake Greeson trip."

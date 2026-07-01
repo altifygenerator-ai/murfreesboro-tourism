@@ -42,9 +42,9 @@ export type GuidePageData = {
 export const thingsToDoGuide: GuidePageData = {
   slug: "things-to-do-in-murfreesboro-arkansas",
   metadata: {
-    title: "Things To Do in Murfreesboro Arkansas | Crater of Diamonds, Lake Greeson & Local Stops",
+    title: "Things To Do in Murfreesboro, Arkansas | Crater of Diamonds & Lake Greeson",
     description:
-      "A practical guide to things to do in Murfreesboro, Arkansas, including Crater of Diamonds, Lake Greeson, Swaha, Dam Grill, Ka-Do-Ha, Dino Dig, restaurants, cabins, family stops, and nearby day trips.",
+      "A practical guide to things to do in Murfreesboro, Arkansas, including Crater of Diamonds, Lake Greeson, Ka-Do-Ha, Dino Dig, restaurants, cabins, family stops, and nearby day trips.",
     keywords: [
       "things to do in Murfreesboro Arkansas",
       "Murfreesboro Arkansas attractions",
@@ -156,8 +156,10 @@ export const thingsToDoGuide: GuidePageData = {
   ],
   related: [
     { href: "/crater-of-diamonds-guide", label: "Crater Guide" },
+    { href: "/things-to-do-near-crater-of-diamonds", label: "Near Crater" },
     { href: "/lake-greeson", label: "Lake Greeson" },
     { href: "/murfreesboro-family-trip", label: "Family Trip" },
+    { href: "/murfreesboro-restaurants", label: "Restaurants" },
   ],
   cta: {
     title: "Plan the trip around the day you actually want, not a checklist.",
@@ -169,9 +171,9 @@ export const thingsToDoGuide: GuidePageData = {
 export const craterGuide: GuidePageData = {
   slug: "crater-of-diamonds-guide",
   metadata: {
-    title: "Crater of Diamonds Guide | What To Know Before Visiting Murfreesboro Arkansas",
+    title: "Crater of Diamonds Guide | Murfreesboro, Arkansas Trip Planning",
     description:
-      "A practical Crater of Diamonds State Park guide for Murfreesboro visitors, with planning notes for diamond digging, kids, heat, what to bring, nearby food, Lake Greeson, and family trips.",
+      "A practical Crater of Diamonds State Park guide for Murfreesboro visitors, with notes for diamond digging, kids, heat, what to bring, nearby food, Lake Greeson, and family trips.",
     keywords: [
       "Crater of Diamonds guide",
       "Crater of Diamonds State Park",
@@ -268,6 +270,8 @@ export const craterGuide: GuidePageData = {
   related: [
     { href: "/things-to-do-near-crater-of-diamonds", label: "Things Nearby" },
     { href: "/murfreesboro-family-trip", label: "Family Trip Guide" },
+    { href: "/murfreesboro-restaurants", label: "Food After Digging" },
+    { href: "/murfreesboro-shopping-supplies", label: "Supplies" },
     { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
   ],
   cta: {
@@ -392,7 +396,9 @@ export const nearCraterGuide: GuidePageData = {
   related: [
     { href: "/crater-of-diamonds-guide", label: "Crater Guide" },
     { href: "/lake-greeson", label: "Lake Greeson" },
+    { href: "/murfreesboro-family-trip", label: "Family Trip" },
     { href: "/murfreesboro-restaurants", label: "Restaurants" },
+    { href: "/murfreesboro-shopping-supplies", label: "Supplies" },
   ],
   cta: {
     title: "After the field, make the rest of the day easier on purpose.",
@@ -503,6 +509,8 @@ export const lakeGreesonGuide: GuidePageData = {
     { href: "/crater-of-diamonds-guide", label: "Crater Guide" },
     { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
     { href: "/murfreesboro-restaurants", label: "Restaurants" },
+    { href: "/little-missouri-river-murfreesboro", label: "Little Missouri" },
+    { href: "/bear-creek-cycle-trail", label: "Bear Creek Trail" },
   ],
   cta: {
     title: "Treat the lake like part of the trip, not filler between attractions.",
@@ -728,7 +736,7 @@ export const restaurantsGuide: GuidePageData = {
 export const familyGuide: GuidePageData = {
   slug: "murfreesboro-family-trip",
   metadata: {
-    title: "Murfreesboro Arkansas Family Trip Guide | Crater of Diamonds, Lake Greeson & Kids",
+    title: "Murfreesboro Family Trip Guide | Crater of Diamonds & Lake Greeson",
     description:
       "Plan a family trip to Murfreesboro, Arkansas with practical tips for Crater of Diamonds, Lake Greeson, kids, cabins, food, heat, water, Dino Dig, Ka-Do-Ha, and nearby day trips.",
     keywords: [
@@ -844,7 +852,7 @@ export const familyGuide: GuidePageData = {
 export const dayTripsGuide: GuidePageData = {
   slug: "day-trips-from-murfreesboro",
   metadata: {
-    title: "Day Trips From Murfreesboro Arkansas | Lake Greeson, Glenwood, Mount Ida & Hot Springs",
+    title: "Day Trips From Murfreesboro, Arkansas | Lake Greeson, Glenwood & Hot Springs",
     description:
       "Plan day trips from Murfreesboro, Arkansas to Lake Greeson, Glenwood and the Caddo River, Mount Ida and Lake Ouachita, Hot Springs, Little Missouri Falls, and nearby southwest Arkansas stops.",
     keywords: [
@@ -956,6 +964,8 @@ export const dayTripsGuide: GuidePageData = {
     { href: "/lake-greeson", label: "Lake Greeson" },
     { href: "/murfreesboro-family-trip", label: "Family Trip" },
     { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
+    { href: "/little-missouri-river-murfreesboro", label: "Little Missouri" },
+    { href: "/bear-creek-cycle-trail", label: "Bear Creek Trail" },
   ],
   cta: {
     title: "Start with Murfreesboro, then choose the direction that fits your weekend.",

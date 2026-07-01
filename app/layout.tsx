@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SiteSearch from "@/components/SiteSearch";
 import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
@@ -14,13 +15,13 @@ const playfair = Playfair_Display({
   variable: "--font-heading",
 });
 
-const siteUrl = "https://murfreesboroarkansas.org";
+const siteUrl = "https://www.murfreesboroarkansas.org";
 
 const title =
-  "Murfreesboro Arkansas Guide | Crater of Diamonds, Lake Greeson & Local Trips";
+  "Murfreesboro Arkansas Travel Guide | Crater of Diamonds & Lake Greeson";
 
 const description =
-  "Plan a Murfreesboro, Arkansas trip around Crater of Diamonds State Park, Lake Greeson, cabins, restaurants, local shops, family stops, fishing, camping, and nearby southwest Arkansas day trips.";
+  "Plan a Murfreesboro, Arkansas trip around Crater of Diamonds State Park, Lake Greeson, cabins, restaurants, family stops, fishing, camping, and southwest Arkansas day trips.";
 
 const ogImage = "/images/murfreesboro/og-murfreesboro-arkansas-guide.png";
 
@@ -162,6 +163,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>
         <Header />
+        <SiteSearch />
         {children}
         <Footer />
         <Analytics />
