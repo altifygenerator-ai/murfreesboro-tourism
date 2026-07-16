@@ -25,10 +25,10 @@ const restaurantBusinesses = localBusinesses.filter(
 );
 
 const featuredRestaurantPlacement = {
-  name: "Reserved Restaurant Feature",
-  type: "Reserved Local Feature",
+  name: "Feature Your Restaurant Here",
+  type: "Featured Placement Available",
   description:
-    "This feature space is set aside for a Murfreesboro-area restaurant, cafe, food stop, or lake-area dining option that fits naturally with Crater of Diamonds, Lake Greeson, and local trip planning.",
+    "A stronger spot for a Murfreesboro-area restaurant, cafe, food truck, breakfast stop, or lake-area dining option that visitors should know about while planning around Crater of Diamonds and Lake Greeson.",
   image: imagePaths.downtown,
   href: "/contact",
 };
@@ -221,7 +221,7 @@ export default function RestaurantsPage() {
               <div className="image-card h-[300px]">
                 <Image
                   src={featuredRestaurantPlacement.image}
-                  alt="Reserved restaurant feature for the Murfreesboro Arkansas Guide"
+                  alt="Featured restaurant placement for the Murfreesboro Arkansas Guide"
                   width={1000}
                   height={700}
                 />
@@ -237,15 +237,14 @@ export default function RestaurantsPage() {
                 </h3>
 
                 <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
-                  This reserved feature space is for a Murfreesboro-area food
-                  stop visitors may want to know about while planning meals
-                  around Crater of Diamonds, Lake Greeson, cabins, campgrounds,
-                  or a weekend in southwest Arkansas. It can highlight the food,
-                  setting, location, hours, and why the stop fits the trip.
+                  A featured restaurant spot gives visitors a better look at a local food
+                  stop before they are hot, hungry, and trying to decide where to
+                  eat. It can highlight the food, setting, location, and why the
+                  stop fits a Crater of Diamonds or Lake Greeson trip.
                 </p>
 
                 <span className="mt-6 inline-block text-sm font-black text-[color:var(--color-accent)]">
-                  Reserved local feature space →
+                  Featured placement available →
                 </span>
               </div>
             </Link>

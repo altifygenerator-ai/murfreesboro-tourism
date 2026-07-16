@@ -24,10 +24,10 @@ export type LocalBusiness = {
 
 
 export const featuredBusinessPlaceholder = {
-  name: "Featured Local Business",
-  type: "Featured Placement • Placeholder Card",
+  name: "Feature Your Murfreesboro Business",
+  type: "Featured Placement Available",
   description:
-    "This larger card is reserved for a Murfreesboro-area business that wants more room than a basic listing. Replace this with a real business photo, description, contact link, and placement details when you have a featured advertiser.",
+    "A stronger spot for a local restaurant, cabin, shop, attraction, marina, outdoor stop, or service that visitors should know about while planning around Crater of Diamonds, Lake Greeson, and Murfreesboro.",
   image: imagePaths.downtown,
   href: "/contact",
 };
@@ -685,6 +685,101 @@ export const localBusinesses: LocalBusiness[] = [
     "day-trips-from-murfreesboro",
     "things-to-do-in-murfreesboro-arkansas",
     "murfreesboro-family-trip",
+  ],
+},
+
+{
+  name: "Kirby Landing Marina",
+  type: "Marina • Boat Rentals • Lake Greeson",
+  category: "outdoor",
+  area: "Kirby / Lake Greeson",
+  description:
+    "A Lake Greeson marina stop near Kirby for visitors planning around boat rentals, fuel, fishing supplies, lake access, and water-focused days north of Murfreesboro.",
+  href: "https://www.mvk.usace.army.mil/Missions/Recreation/Lake-Greeson/",
+  guideHref: "/lake-greeson",
+  phone: "870-398-4434",
+  address: "224 Kirby Landing Road, Kirby, AR 71950",
+  note:
+    "Good for visitors building the trip around Lake Greeson. Call ahead for marina services, boat rental details, lake conditions, and seasonal availability.",
+  guideSlugs: [
+    "lake-greeson",
+    "murfreesboro-cabins",
+    "day-trips-from-murfreesboro",
+    "things-to-do-in-murfreesboro-arkansas",
+  ],
+},
+{
+  name: "Hwy 70 Landing and Marina",
+  type: "Marina • Lake Greeson • Boat Access",
+  category: "outdoor",
+  area: "Lake Greeson / Kirby Area",
+  description:
+    "A Lake Greeson marina listed by the Corps of Engineers for visitors who need lake access, marina services, fishing supplies, or a practical stop on the Kirby side of the lake.",
+  href: "https://www.mvk.usace.army.mil/Missions/Recreation/Lake-Greeson/",
+  guideHref: "/lake-greeson",
+  phone: "870-398-5490",
+  note:
+    "Use this as a check-ahead lake stop. Call before driving out for current marina services, fuel, supplies, and rental details.",
+  guideSlugs: [
+    "lake-greeson",
+    "day-trips-from-murfreesboro",
+    "things-to-do-in-murfreesboro-arkansas",
+  ],
+},
+{
+  name: "Cowhide Cove Recreation Area",
+  type: "Camping • Boat Ramp • Swim Beach • Lake Greeson",
+  category: "outdoor",
+  area: "Lake Greeson",
+  description:
+    "A Corps-managed Lake Greeson recreation area between Murfreesboro and Kirby with camping, a concrete boat ramp, shower house, modern bathroom, playground, and swim beach.",
+  href: "https://www.mvk.usace.army.mil/Missions/Recreation/Lake-Greeson/",
+  guideHref: "/lake-greeson",
+  address: "239 New Cowhide Cove Road, Murfreesboro, AR 71958",
+  note:
+    "Useful for camping, lake days, and boat access. Check current Corps details, fees, reservations, and seasonal conditions before going.",
+  guideSlugs: [
+    "lake-greeson",
+    "murfreesboro-cabins",
+    "murfreesboro-family-trip",
+    "day-trips-from-murfreesboro",
+  ],
+},
+{
+  name: "Kirby Landing Recreation Area",
+  type: "Camping • Boat Ramps • Swim Beach • Lake Greeson",
+  category: "outdoor",
+  area: "Kirby / Lake Greeson",
+  description:
+    "A large Lake Greeson camping and recreation area near Kirby with boat ramps, bathroom and shower facilities, hookups, playground space, and a swim beach.",
+  href: "https://www.mvk.usace.army.mil/Missions/Recreation/Lake-Greeson/",
+  guideHref: "/lake-greeson",
+  address: "224 Kirby Landing Road, Kirby, AR 71950",
+  note:
+    "Good for visitors bringing boats, campers, or lake gear. Check current campground availability, fees, and lake conditions before planning around it.",
+  guideSlugs: [
+    "lake-greeson",
+    "murfreesboro-cabins",
+    "murfreesboro-family-trip",
+    "day-trips-from-murfreesboro",
+  ],
+},
+{
+  name: "Parker Creek Recreation Area",
+  type: "Lake Greeson • Camping • Trails • Outdoor Stop",
+  category: "outdoor",
+  area: "Lake Greeson",
+  description:
+    "A Lake Greeson recreation area that can work for visitors looking at camping, lake access, trail time, and a quieter outdoor plan beyond the diamond field.",
+  href: "https://www.mvk.usace.army.mil/Missions/Recreation/Lake-Greeson/",
+  guideHref: "/lake-greeson",
+  note:
+    "Check current Corps details for camping, trail access, lake conditions, reservations, and any seasonal limits before heading out.",
+  guideSlugs: [
+    "lake-greeson",
+    "day-trips-from-murfreesboro",
+    "little-missouri-river-murfreesboro",
+    "things-to-do-in-murfreesboro-arkansas",
   ],
 },
 ];

@@ -30,10 +30,10 @@ const stayBusinesses = localBusinesses.filter((business) =>
 );
 
 const featuredStayPlacement = {
-  name: "Reserved Cabins & Stays Feature",
-  type: "Reserved Local Feature",
+  name: "Feature Your Stay Here",
+  type: "Featured Placement Available",
   description:
-    "This feature space is set aside for a Murfreesboro-area cabin, RV park, campground, lake stay, or visitor-friendly lodging option that fits naturally with Crater of Diamonds, Lake Greeson, and southwest Arkansas trip planning.",
+    "A stronger spot for a Murfreesboro-area cabin, RV park, campground, lake stay, hotel, inn, or vacation rental that visitors should know about while planning around Crater of Diamonds and Lake Greeson.",
   image: imagePaths.downtown,
   href: "/contact",
 };
@@ -229,7 +229,7 @@ export default function CabinsPage() {
               <div className="image-card h-[300px]">
                 <Image
                   src={featuredStayPlacement.image}
-                  alt="Reserved cabins and places to stay feature for the Murfreesboro Arkansas Guide"
+                  alt="Featured cabins and places to stay placement for the Murfreesboro Arkansas Guide"
                   width={1000}
                   height={700}
                 />
@@ -245,15 +245,14 @@ export default function CabinsPage() {
                 </h3>
 
                 <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
-                  This reserved feature space is for a Murfreesboro-area stay
-                  that visitors may want to know about while planning around
-                  Crater of Diamonds, Lake Greeson, or a weekend in southwest
-                  Arkansas. It can highlight the setting, guest experience,
-                  location, amenities, and why the stay fits the trip.
+                  A featured stay spot gives visitors a closer look at a cabin, RV park,
+                  campground, hotel, inn, or vacation rental before they book.
+                  It can highlight the setting, guest experience, location,
+                  amenities, and why the stay fits the trip.
                 </p>
 
                 <span className="mt-6 inline-block text-sm font-black text-[color:var(--color-accent)]">
-                  Reserved local feature space →
+                  Featured placement available →
                 </span>
               </div>
             </Link>

@@ -225,7 +225,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Local Businesses"
               title="Food, stays, supplies, and outdoor stops visitors actually need."
-              text="The Murfreesboro guide now includes basic local listings for restaurants, cabins, RV parks, diamond digging supplies, Lake Greeson stops, outdoor recreation, and practical visitor needs. Featured placement can be added later without making the regular guide feel like a sales page."
+              text="The Murfreesboro guide now includes more basic local listings for restaurants, cabins, RV parks, diamond digging supplies, Lake Greeson stops, outdoor recreation, and practical visitor needs. The goal is simple: help visitors find real places that make the trip easier."
             />
 
             <div className="grid gap-4 sm:grid-cols-2">

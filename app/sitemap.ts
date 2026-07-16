@@ -26,6 +26,11 @@ const coreRoutes: SitemapRoute[] = [
     changeFrequency: "monthly",
   },
   {
+    path: "/what-to-do-after-crater-of-diamonds",
+    priority: 0.92,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/things-to-do-near-crater-of-diamonds",
     priority: 0.9,
     changeFrequency: "monthly",

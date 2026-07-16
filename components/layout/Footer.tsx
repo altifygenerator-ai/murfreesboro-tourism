@@ -11,6 +11,10 @@ const footerGuides = [
     label: "Crater of Diamonds",
   },
   {
+    href: "/what-to-do-after-crater-of-diamonds",
+    label: "After Crater of Diamonds",
+  },
+  {
     href: "/things-to-do-near-crater-of-diamonds",
     label: "Near Crater of Diamonds",
   },
@@ -135,7 +139,7 @@ export default function Footer() {
             <p className="!text-white/85">
               Website by{" "}
               <a
-                href="https://hometownwebservicesar.cc"
+                href="https://hometownwebservicesar.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold !text-white underline underline-offset-4 transition hover:!text-white/85"

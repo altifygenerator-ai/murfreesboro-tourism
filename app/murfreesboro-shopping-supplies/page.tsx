@@ -29,10 +29,10 @@ const shoppingBusinesses = localBusinesses.filter(
 );
 
 const featuredShoppingPlacement = {
-  name: "Reserved Shopping & Supplies Feature",
-  type: "Reserved Local Feature",
+  name: "Feature Your Shop Here",
+  type: "Featured Placement Available",
   description:
-    "This feature space is set aside for a Murfreesboro-area shop, supply stop, souvenir spot, hardware store, or visitor-friendly business that fits naturally with Crater of Diamonds, Lake Greeson, and local trip planning.",
+    "A stronger spot for a Murfreesboro-area shop, supply stop, souvenir store, hardware store, boutique, rock shop, or visitor-friendly business that helps people plan around Crater of Diamonds and Lake Greeson.",
   image: imagePaths.downtown,
   href: "/contact",
 };
@@ -207,7 +207,7 @@ export default function ShoppingSuppliesPage() {
               <div className="image-card h-[300px]">
                 <Image
                   src={featuredShoppingPlacement.image}
-                  alt="Reserved local shopping and supplies feature for the Murfreesboro Arkansas Guide"
+                  alt="Featured local shopping and supplies placement for the Murfreesboro Arkansas Guide"
                   width={1000}
                   height={700}
                 />
@@ -223,15 +223,15 @@ export default function ShoppingSuppliesPage() {
                 </h3>
 
                 <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
-                  This reserved feature space is for a Murfreesboro-area shop
-                  or supply stop that visitors may want to know about before or
-                  after the park. It could highlight what the business offers,
-                  where it fits into the trip, and why it is useful for people
-                  planning around Crater of Diamonds, Lake Greeson, or the town.
+                  A featured shopping spot gives visitors a better look at a local shop
+                  or supply stop before or after the park. It can highlight what
+                  the business offers, where it fits into the trip, and why it is
+                  useful for people planning around Crater of Diamonds, Lake
+                  Greeson, or the town.
                 </p>
 
                 <span className="mt-6 inline-block text-sm font-black text-[color:var(--color-accent)]">
-                  Reserved local feature space →
+                  Featured placement available →
                 </span>
               </div>
             </Link>

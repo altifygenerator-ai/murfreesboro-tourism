@@ -37,6 +37,15 @@ const pageEntries: SearchEntry[] = [
       "diamond field diamonds digging state park tools rentals water park treasure hunting rocks gemstones",
   },
   {
+    title: "What To Do After Crater of Diamonds",
+    href: "/what-to-do-after-crater-of-diamonds",
+    category: "Crater Area Article",
+    description:
+      "Food, shade, Dino Dig, Ka-Do-Ha, Lake Greeson, cabins, and easy next moves after a Crater of Diamonds day in Murfreesboro.",
+    keywords:
+      "what to do after crater of diamonds after digging restaurants lake greeson dino dig kadoha cabins murfreesboro",
+  },
+  {
     title: "Things To Do Near Crater of Diamonds",
     href: "/things-to-do-near-crater-of-diamonds",
     category: "Crater Area",

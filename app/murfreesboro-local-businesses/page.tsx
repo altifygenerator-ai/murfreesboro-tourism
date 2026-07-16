@@ -109,7 +109,7 @@ export default function LocalBusinessesPage() {
         <div className="image-card h-[300px]">
           <Image
             src={featuredBusinessPlaceholder.image}
-            alt="Reserved featured business placement for the Murfreesboro Arkansas Guide"
+            alt="Featured business placement for the Murfreesboro Arkansas Guide"
             width={1000}
             height={700}
           />
@@ -117,16 +117,16 @@ export default function LocalBusinessesPage() {
 
         <div className="p-7">
           <p className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
-            Reserved Featured Placement
+            Featured Placement Available
           </p>
 
           <h3 className="text-3xl font-semibold leading-tight text-[color:var(--color-text)]">
-            Featured Local Business Space
+            Feature Your Local Business
           </h3>
 
         <p className="mt-4 leading-7 text-[color:var(--color-muted)]">
-  This reserved feature space is set aside for a Murfreesboro-area business
-  that fits naturally with visitor planning. It could highlight a local stay,
+  A featured spot gives visitors a closer look at a Murfreesboro-area business
+  that fits naturally with trip planning. It can highlight a local stay,
   restaurant, shop, attraction, outdoor stop, rental, or service that helps
   people make the most of a Crater of Diamonds, Lake Greeson, or southwest
   Arkansas trip.

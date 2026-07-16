@@ -47,6 +47,10 @@ export const navLinks = {
       label: "Crater of Diamonds Guide",
     },
     {
+      href: "/what-to-do-after-crater-of-diamonds",
+      label: "After Crater of Diamonds",
+    },
+    {
       href: "/things-to-do-near-crater-of-diamonds",
       label: "Near Crater of Diamonds",
     },
@@ -122,6 +126,11 @@ export const quickLinks = [
     title: "Crater of Diamonds",
     href: "/crater-of-diamonds-guide",
     text: "Start here if the diamond field is the reason your family is coming to Murfreesboro.",
+  },
+  {
+    title: "After Crater of Diamonds",
+    href: "/what-to-do-after-crater-of-diamonds",
+    text: "Food, shade, kid-friendly stops, Lake Greeson, and easy next moves after the diamond field.",
   },
   {
     title: "Lake Greeson",

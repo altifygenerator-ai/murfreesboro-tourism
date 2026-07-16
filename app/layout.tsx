@@ -50,6 +50,8 @@ export const metadata: Metadata = {
     "Crater of Diamonds Arkansas",
     "Crater of Diamonds Murfreesboro Arkansas",
     "things to do near Crater of Diamonds",
+    "what to do after Crater of Diamonds",
+    "after Crater of Diamonds",
     "cabins near Crater of Diamonds",
     "restaurants near Crater of Diamonds",
     "diamond digging Arkansas",
@@ -139,7 +141,7 @@ export const metadata: Metadata = {
     images: [ogImage],
   },
 
-    robots: {
+  robots: {
     index: true,
     follow: true,
     googleBot: {

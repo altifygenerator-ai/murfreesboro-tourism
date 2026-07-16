@@ -2,25 +2,25 @@ import Link from "next/link";
 
 const updates = [
   {
-    date: "June 27, 2026",
-    label: "New family stop",
-    title: "Dino Dig added to the Murfreesboro guide",
-    text: "A kid-friendly indoor digging stop near Crater of Diamonds, useful for families who need a shorter activity, a break from the heat, or something easy to pair with the diamond field.",
-    href: "/things-to-do-near-crater-of-diamonds",
+    date: "July 16, 2026",
+    label: "New article",
+    title: "What to do after Crater of Diamonds",
+    text: "A new visitor guide helps families decide what comes next after the diamond field, whether that means food, shade, Dino Dig, Ka-Do-Ha, Lake Greeson, or heading back to the cabin.",
+    href: "/what-to-do-after-crater-of-diamonds",
   },
   {
-    date: "June 27, 2026",
-    label: "Guide update",
-    title: "Family Trip Guide refreshed with backup ideas",
-    text: "The family guide now gives visitors a better way to plan around Crater of Diamonds, Lake Greeson, meals, cleanup time, and simple kid-friendly backup plans.",
-    href: "/murfreesboro-family-trip",
+    date: "July 16, 2026",
+    label: "Business cleanup",
+    title: "More Lake Greeson and Murfreesboro-area listings added",
+    text: "The local guide now has more basic listings for lake access, marinas, campgrounds, recreation areas, restaurants, shops, stays, and useful visitor stops around Murfreesboro and Lake Greeson.",
+    href: "/murfreesboro-local-businesses",
   },
   {
-    date: "June 27, 2026",
-    label: "Crater-area planning",
-    title: "Things to do near Crater of Diamonds expanded",
-    text: "The Crater-area guide now has stronger short-stop planning for visitors who want more than the diamond field without turning the day into a rushed checklist.",
-    href: "/things-to-do-near-crater-of-diamonds",
+    date: "July 16, 2026",
+    label: "Planning update",
+    title: "Crater, food, lodging, and lake links tightened up",
+    text: "Internal links, search details, sitemap routes, and planning pages were cleaned up so visitors can move easier between Crater of Diamonds, restaurants, cabins, shopping, and Lake Greeson.",
+    href: "/things-to-do-in-murfreesboro-arkansas",
   },
 ];
 
@@ -33,11 +33,11 @@ export default function RecentUpdates() {
             <div>
               <p className="hero-eyebrow">Recent Updates</p>
               <h2 className="mt-2 text-3xl font-semibold leading-tight text-[color:var(--color-text)] sm:text-4xl">
-                New notes added to the Murfreesboro guide.
+                New Murfreesboro planning notes and local listings.
               </h2>
             </div>
-            <Link href="/things-to-do-in-murfreesboro-arkansas" className="btn-secondary">
-              View Things To Do
+            <Link href="/what-to-do-after-crater-of-diamonds" className="btn-secondary">
+              Read New Article
             </Link>
           </div>
 
