@@ -565,6 +565,71 @@ export default function GuidePage({ data }: { data: GuidePageData }) {
         </section>
       ))}
 
+      {data.planningTable && (
+        <section className="section pt-0">
+          <div className="container">
+            <div className="card overflow-hidden">
+              <div className="border-b border-black/10 p-7 md:p-9">
+                <p className="hero-eyebrow mb-3">{data.planningTable.eyebrow}</p>
+                <h2 className="text-3xl font-semibold leading-tight text-[color:var(--color-text)] md:text-4xl">
+                  {data.planningTable.title}
+                </h2>
+                <p className="mt-4 max-w-3xl leading-7 text-[color:var(--color-muted)]">
+                  {data.planningTable.intro}
+                </p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[720px] border-collapse text-left">
+                  <thead className="bg-white/60">
+                    <tr>
+                      {data.planningTable.columns.map((column) => (
+                        <th key={column} className="border-b border-black/10 px-6 py-4 text-sm font-black uppercase tracking-[0.12em] text-[color:var(--color-text)]">
+                          {column}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {data.planningTable.rows.map((row) => (
+                      <tr key={row.join("-")} className="border-b border-black/10 last:border-b-0">
+                        {row.map((cell, index) => (
+                          <td key={`${cell}-${index}`} className="px-6 py-5 align-top leading-7 text-[color:var(--color-muted)] first:font-bold first:text-[color:var(--color-text)]">
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {data.sourceLinks && data.sourceLinks.length > 0 && (
+        <section className="section bg-white/30">
+          <div className="container">
+            <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+              <SectionHeading
+                eyebrow="Official Sources"
+                title="Check current details before you go."
+                text="Rules, reservations, hours, fees, rentals, water conditions, and seasonal services can change. These are the sources to use when the trip depends on a current detail."
+              />
+              <div className="grid gap-4">
+                {data.sourceLinks.map((source) => (
+                  <a key={source.href} href={source.href} target="_blank" rel="noopener noreferrer" className="card block p-6 transition hover:-translate-y-0.5">
+                    <h3 className="text-xl font-semibold text-[color:var(--color-text)]">{source.title}</h3>
+                    <p className="mt-3 leading-7 text-[color:var(--color-muted)]">{source.text}</p>
+                    <span className="mt-4 inline-flex text-sm font-black text-[color:var(--color-accent)]">Open official source →</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="section">
         <div className="container">
           <div className="section-heading">

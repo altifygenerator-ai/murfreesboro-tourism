@@ -40,6 +40,36 @@ const coreRoutes: SitemapRoute[] = [
     priority: 0.94,
     changeFrequency: "monthly",
   },
+  {
+    path: "/lake-greeson-fishing",
+    priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/lake-greeson-camping-swimming",
+    priority: 0.88,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/lake-greeson-marinas-boat-rentals",
+    priority: 0.88,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/daisy-state-park",
+    priority: 0.88,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/swaha-lodge-marina-lake-greeson",
+    priority: 0.86,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/kirby-landing-lake-greeson",
+    priority: 0.86,
+    changeFrequency: "monthly",
+  },
 ];
 
 const planningRoutes: SitemapRoute[] = [
@@ -89,12 +119,6 @@ const localGuideRoutes: SitemapRoute[] = [
 ];
 
 const utilityRoutes: SitemapRoute[] = [
-
-  {
-    path: "/search",
-    priority: 0.6,
-    changeFrequency: "monthly",
-  },
   {
     path: "/contact",
     priority: 0.55,

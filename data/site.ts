@@ -58,6 +58,14 @@ export const navLinks = {
       href: "/lake-greeson",
       label: "Lake Greeson",
     },
+    {
+      href: "/lake-greeson-fishing",
+      label: "Lake Greeson Fishing",
+    },
+    {
+      href: "/daisy-state-park",
+      label: "Daisy State Park",
+    },
   ],
 
   plan: [
@@ -76,6 +84,14 @@ export const navLinks = {
     {
       href: "/day-trips-from-murfreesboro",
       label: "Day Trips",
+    },
+    {
+      href: "/lake-greeson-camping-swimming",
+      label: "Camping & Swimming",
+    },
+    {
+      href: "/lake-greeson-marinas-boat-rentals",
+      label: "Marinas & Boat Rentals",
     },
   ],
 

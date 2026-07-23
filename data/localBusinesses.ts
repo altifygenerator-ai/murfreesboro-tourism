@@ -19,6 +19,7 @@ export type LocalBusiness = {
   phone?: string;
   address?: string;
   note?: string;
+  lastVerified?: string;
   guideSlugs: string[];
 };
 
@@ -59,7 +60,8 @@ export const localBusinesses: LocalBusiness[] = [
     phone: "870-285-2272",
     address: "205 Dynamite Hill Road, Murfreesboro, AR 71958",
     note: "Best treated as a Lake Greeson anchor. Check lodging, boat rental, marina, and seasonal food details directly before booking.",
-    guideSlugs: ["lake-greeson", "murfreesboro-cabins", "murfreesboro-family-trip", "murfreesboro-restaurants", "day-trips-from-murfreesboro"],
+    lastVerified: "2026-07-23",
+    guideSlugs: ["lake-greeson", "lake-greeson-fishing", "lake-greeson-marinas-boat-rentals", "swaha-lodge-marina-lake-greeson", "murfreesboro-cabins", "murfreesboro-family-trip", "murfreesboro-restaurants", "day-trips-from-murfreesboro"],
   },
   {
     name: "Dam Grill at Swaha",
@@ -701,8 +703,12 @@ export const localBusinesses: LocalBusiness[] = [
   address: "224 Kirby Landing Road, Kirby, AR 71950",
   note:
     "Good for visitors building the trip around Lake Greeson. Call ahead for marina services, boat rental details, lake conditions, and seasonal availability.",
+  lastVerified: "2026-07-23",
   guideSlugs: [
     "lake-greeson",
+    "lake-greeson-fishing",
+    "lake-greeson-marinas-boat-rentals",
+    "kirby-landing-lake-greeson",
     "murfreesboro-cabins",
     "day-trips-from-murfreesboro",
     "things-to-do-in-murfreesboro-arkansas",
@@ -738,8 +744,10 @@ export const localBusinesses: LocalBusiness[] = [
   address: "239 New Cowhide Cove Road, Murfreesboro, AR 71958",
   note:
     "Useful for camping, lake days, and boat access. Check current Corps details, fees, reservations, and seasonal conditions before going.",
+  lastVerified: "2026-07-23",
   guideSlugs: [
     "lake-greeson",
+    "lake-greeson-camping-swimming",
     "murfreesboro-cabins",
     "murfreesboro-family-trip",
     "day-trips-from-murfreesboro",
@@ -757,8 +765,10 @@ export const localBusinesses: LocalBusiness[] = [
   address: "224 Kirby Landing Road, Kirby, AR 71950",
   note:
     "Good for visitors bringing boats, campers, or lake gear. Check current campground availability, fees, and lake conditions before planning around it.",
+  lastVerified: "2026-07-23",
   guideSlugs: [
     "lake-greeson",
+    "lake-greeson-camping-swimming",
     "murfreesboro-cabins",
     "murfreesboro-family-trip",
     "day-trips-from-murfreesboro",
@@ -775,8 +785,10 @@ export const localBusinesses: LocalBusiness[] = [
   guideHref: "/lake-greeson",
   note:
     "Check current Corps details for camping, trail access, lake conditions, reservations, and any seasonal limits before heading out.",
+  lastVerified: "2026-07-23",
   guideSlugs: [
     "lake-greeson",
+    "lake-greeson-camping-swimming",
     "day-trips-from-murfreesboro",
     "little-missouri-river-murfreesboro",
     "things-to-do-in-murfreesboro-arkansas",

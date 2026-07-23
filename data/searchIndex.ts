@@ -63,6 +63,49 @@ const pageEntries: SearchEntry[] = [
     keywords:
       "lake greeson boating fishing swimming camping swaha marina dam grill cabins water",
   },
+
+  {
+    title: "Lake Greeson Fishing",
+    href: "/lake-greeson-fishing",
+    category: "Fishing Guide",
+    description: "Plan shore, boat, marina, license, lodging, and supply details for a Lake Greeson fishing trip near Murfreesboro.",
+    keywords: "lake greeson fishing license boat ramp marina shore tailwater angler",
+  },
+  {
+    title: "Lake Greeson Camping & Swimming",
+    href: "/lake-greeson-camping-swimming",
+    category: "Lake Guide",
+    description: "Compare Daisy, Kirby Landing, Cowhide Cove, Parker Creek, swim beaches, camping, reservations, and day use.",
+    keywords: "lake greeson camping swimming beach cowhide cove parker creek kirby landing daisy",
+  },
+  {
+    title: "Lake Greeson Marinas & Boat Rentals",
+    href: "/lake-greeson-marinas-boat-rentals",
+    category: "Marina Guide",
+    description: "Verified Lake Greeson marina, boat-rental, fuel, launch, supply, and lake-service planning.",
+    keywords: "lake greeson marina boat rentals swaha kirby landing fuel launch",
+  },
+  {
+    title: "Daisy State Park",
+    href: "/daisy-state-park",
+    category: "State Park Guide",
+    description: "Camping, Lake Greeson access, family use, Bear Creek trail context, and official planning for Daisy State Park.",
+    keywords: "daisy state park camping lake greeson bear creek trail family",
+  },
+  {
+    title: "Swaha Lodge & Marina",
+    href: "/swaha-lodge-marina-lake-greeson",
+    category: "Named Place Guide",
+    description: "A factual visitor guide to lodging, marina access, boat rentals, seasonal food, and nearby Murfreesboro planning.",
+    keywords: "swaha lodge marina cabins boat rentals lake greeson murfreesboro",
+  },
+  {
+    title: "Kirby Landing",
+    href: "/kirby-landing-lake-greeson",
+    category: "Named Place Guide",
+    description: "Kirby Landing campground, marina, boat ramp, swim beach, day use, rentals, and Lake Greeson planning.",
+    keywords: "kirby landing campground marina boat ramp swim beach lake greeson",
+  },
   {
     title: "Murfreesboro Family Trip Guide",
     href: "/murfreesboro-family-trip",
