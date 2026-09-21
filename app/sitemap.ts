@@ -8,13 +8,10 @@ type SitemapRoute = {
 };
 
 const baseUrl = site.domain.replace(/\/$/, "");
+const contentUpdated = new Date("2026-09-20T00:00:00-05:00");
 
 const coreRoutes: SitemapRoute[] = [
-  {
-    path: "/",
-    priority: 1,
-    changeFrequency: "weekly",
-  },
+  { path: "/", priority: 1, changeFrequency: "weekly" },
   {
     path: "/things-to-do-in-murfreesboro-arkansas",
     priority: 0.94,
@@ -22,6 +19,11 @@ const coreRoutes: SitemapRoute[] = [
   },
   {
     path: "/crater-of-diamonds-guide",
+    priority: 0.97,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/crater-of-diamonds-hours-admission",
     priority: 0.96,
     changeFrequency: "monthly",
   },
@@ -35,11 +37,7 @@ const coreRoutes: SitemapRoute[] = [
     priority: 0.9,
     changeFrequency: "monthly",
   },
-  {
-    path: "/lake-greeson",
-    priority: 0.94,
-    changeFrequency: "monthly",
-  },
+  { path: "/lake-greeson", priority: 0.94, changeFrequency: "monthly" },
   {
     path: "/lake-greeson-fishing",
     priority: 0.9,
@@ -55,11 +53,7 @@ const coreRoutes: SitemapRoute[] = [
     priority: 0.88,
     changeFrequency: "monthly",
   },
-  {
-    path: "/daisy-state-park",
-    priority: 0.88,
-    changeFrequency: "monthly",
-  },
+  { path: "/daisy-state-park", priority: 0.88, changeFrequency: "monthly" },
   {
     path: "/swaha-lodge-marina-lake-greeson",
     priority: 0.86,
@@ -73,11 +67,7 @@ const coreRoutes: SitemapRoute[] = [
 ];
 
 const planningRoutes: SitemapRoute[] = [
-  {
-    path: "/murfreesboro-cabins",
-    priority: 0.9,
-    changeFrequency: "monthly",
-  },
+  { path: "/murfreesboro-cabins", priority: 0.9, changeFrequency: "monthly" },
   {
     path: "/murfreesboro-restaurants",
     priority: 0.88,
@@ -119,11 +109,7 @@ const localGuideRoutes: SitemapRoute[] = [
 ];
 
 const utilityRoutes: SitemapRoute[] = [
-  {
-    path: "/contact",
-    priority: 0.55,
-    changeFrequency: "monthly",
-  },
+  { path: "/contact", priority: 0.55, changeFrequency: "monthly" },
 ];
 
 const routes: SitemapRoute[] = [
@@ -134,11 +120,9 @@ const routes: SitemapRoute[] = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
   return routes.map((route) => ({
     url: `${baseUrl}${route.path}`,
-    lastModified,
+    lastModified: contentUpdated,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));

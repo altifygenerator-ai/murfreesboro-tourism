@@ -37,6 +37,15 @@ const pageEntries: SearchEntry[] = [
       "diamond field diamonds digging state park tools rentals water park treasure hunting rocks gemstones",
   },
   {
+    title: "Crater of Diamonds Hours & Admission",
+    href: "/crater-of-diamonds-hours-admission",
+    category: "Crater of Diamonds",
+    description:
+      "Current park hours, diamond-search admission, common tool rental prices, pet rules, water-park season, and practical before-you-go details.",
+    keywords:
+      "crater diamonds hours admission price tickets tool rentals rental kit screen shovel water park pets rules murfreesboro",
+  },
+  {
     title: "What To Do After Crater of Diamonds",
     href: "/what-to-do-after-crater-of-diamonds",
     category: "Crater Area Article",
@@ -63,7 +72,6 @@ const pageEntries: SearchEntry[] = [
     keywords:
       "lake greeson boating fishing swimming camping swaha marina dam grill cabins water",
   },
-
   {
     title: "Lake Greeson Fishing",
     href: "/lake-greeson-fishing",

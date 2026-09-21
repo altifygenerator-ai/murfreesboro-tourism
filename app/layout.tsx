@@ -6,7 +6,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SiteSearch from "@/components/SiteSearch";
-import { site } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 
@@ -30,7 +29,6 @@ export const metadata: Metadata = {
 
   title: {
     default: title,
-    template: "%s | Murfreesboro Arkansas Guide",
   },
 
   description,
