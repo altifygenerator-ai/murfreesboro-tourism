@@ -27,9 +27,7 @@ const ogImage = "/images/murfreesboro/og-murfreesboro-arkansas-guide.png";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
-  title: {
-    default: title,
-  },
+  title,
 
   description,
 
