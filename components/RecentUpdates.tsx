@@ -41,31 +41,7 @@ export default function RecentUpdates() {
             </Link>
           </div>
 
-          <div className="mb-6 overflow-hidden rounded-[28px] border border-amber-900/15 bg-gradient-to-r from-stone-950 via-stone-900 to-amber-950 p-6 text-white shadow-lg sm:p-7">
-            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-              <div className="max-w-3xl">
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">
-                  Featured Cabin Partner
-                </p>
-                <h3 className="mt-2 text-2xl font-semibold leading-tight !text-white sm:text-3xl">
-                  River View Cabins on the Ouachita River
-                </h3>
-                <p className="mt-3 leading-7 !text-white/85">
-                  14 riverfront cabins with hot tubs, a pool, horseback riding, kayak and canoe trips, quartz-crystal hiking trails, direct river access, and fireplaces available November 1 through March 1.
-                </p>
-              </div>
-              <a
-                href="https://www.riverviewcabins-canoes.com/"
-                target="_blank"
-                rel="sponsored noopener noreferrer"
-                className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-black text-stone-950 transition hover:-translate-y-0.5"
-              >
-                Visit River View Cabins ↗
-              </a>
-            </div>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-3">
+                    <div className="grid gap-4 lg:grid-cols-3">
             {updates.map((update) => (
               <Link key={update.title} href={update.href} className="card card-hover p-5">
                 <div className="mb-4 flex flex-wrap items-center gap-2">
