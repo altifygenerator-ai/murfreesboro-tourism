@@ -7,6 +7,7 @@ import CTABox from "@/components/ui/CTABox";
 import FAQList from "@/components/ui/FAQList";
 import JsonLd from "@/components/JsonLd";
 import RecentUpdates from "@/components/RecentUpdates";
+import RiverViewCabinsHomeAd from "@/components/RiverViewCabinsHomeAd";
 import {
   attractions,
   homeFaqs,
@@ -78,6 +79,7 @@ export default function Home() {
         secondary={{ href: "/lake-greeson", label: "Lake Greeson" }}
       />
   <RecentUpdates />
+      <RiverViewCabinsHomeAd />
       <section className="section">
         <div className="container">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
