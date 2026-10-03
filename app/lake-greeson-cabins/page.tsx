@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import SectionHeading from "@/components/ui/SectionHeading";
+import FindAPlaceBookingCTA from "@/components/FindAPlaceBookingCTA";
 import { localBusinesses } from "@/data/localBusinesses";
 import { site } from "@/data/site";
 
@@ -75,7 +76,7 @@ export default function LakeGreesonCabinsPage() {
             text="These existing local lodging listings are especially relevant when the lake is the main part of the trip."
           />
 
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
             {lakeCabins.map((business) => (
               <article key={business.name} className="card flex h-full flex-col p-7">
                 <p className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
@@ -160,6 +161,13 @@ export default function LakeGreesonCabinsPage() {
           </div>
         </div>
       </section>
+
+      <FindAPlaceBookingCTA
+        heading="Looking for another Arkansas stay?"
+        text="Browse cabins, vacation rentals, and other stays available through Find a Place Booking."
+        href="https://www.findaplacebooking.com/stays"
+        buttonLabel="Browse Find a Place Booking →"
+      />
     </main>
   );
 }
