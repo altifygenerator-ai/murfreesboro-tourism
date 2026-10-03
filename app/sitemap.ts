@@ -38,6 +38,7 @@ const coreRoutes: SitemapRoute[] = [
     changeFrequency: "monthly",
   },
   { path: "/lake-greeson", priority: 0.94, changeFrequency: "monthly" },
+  { path: "/lake-greeson-cabins", priority: 0.92, changeFrequency: "monthly" },
   {
     path: "/lake-greeson-fishing",
     priority: 0.9,
