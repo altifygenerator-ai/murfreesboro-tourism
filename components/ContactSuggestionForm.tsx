@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 type Status = "idle" | "sending" | "success" | "error";
 
 export default function ContactSuggestionForm() {
+  const formStartedAt = useRef(Date.now());
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
 
@@ -24,6 +25,7 @@ export default function ContactSuggestionForm() {
       name: String(formData.get("name") || ""),
       email: String(formData.get("email") || ""),
       company: String(formData.get("company") || ""),
+      formStartedAt: formStartedAt.current,
     };
 
     setStatus("sending");
@@ -45,6 +47,7 @@ export default function ContactSuggestionForm() {
       }
 
       form.reset();
+      formStartedAt.current = Date.now();
       setStatus("success");
     } catch (err) {
       setStatus("error");
