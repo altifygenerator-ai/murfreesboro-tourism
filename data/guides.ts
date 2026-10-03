@@ -515,6 +515,7 @@ export const lakeGreesonGuide: GuidePageData = {
   ],
   related: [
     { href: "/crater-of-diamonds-guide", label: "Crater Guide" },
+    { href: "/lake-greeson-cabins", label: "Lake Greeson Cabins" },
     { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
     { href: "/murfreesboro-restaurants", label: "Restaurants" },
     { href: "/little-missouri-river-murfreesboro", label: "Little Missouri" },
@@ -624,6 +625,7 @@ export const cabinsGuide: GuidePageData = {
     },
   ],
   related: [
+    { href: "/lake-greeson-cabins", label: "Lake Greeson Cabins" },
     { href: "/crater-of-diamonds-guide", label: "Crater Guide" },
     { href: "/lake-greeson", label: "Lake Greeson" },
     { href: "/murfreesboro-family-trip", label: "Family Trip" },
