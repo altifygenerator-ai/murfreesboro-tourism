@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
-import CTABox from "@/components/ui/CTABox";
+import CTABox from "@/components/ui/CTABox";\nimport FindAPlaceBookingCTA from "@/components/FindAPlaceBookingCTA";
 import JsonLd from "@/components/JsonLd";
 import { imagePaths, site } from "@/data/site";
 import { localBusinesses } from "@/data/localBusinesses";
@@ -345,6 +345,13 @@ export default function CabinsPage() {
           </div>
         </div>
       </section>
+
+      <FindAPlaceBookingCTA
+        heading="Still looking for the right Arkansas stay?"
+        text="Browse cabins, vacation rentals, and other stays available through Find a Place Booking."
+        href="https://www.findaplacebooking.com/stays"
+        buttonLabel="Browse Find a Place Booking →"
+      />
 
       <CTABox
         title="Know a cabin, RV park, or local stay visitors should know about?"
