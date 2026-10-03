@@ -1,10 +1,11 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
 export default function ContactAdvertisingForm() {
+  const formStartedAt = useRef(Date.now());
   const [status, setStatus] = useState<FormStatus>("idle");
   const [error, setError] = useState("");
 
@@ -27,6 +28,8 @@ export default function ContactAdvertisingForm() {
       website: String(formData.get("website") || ""),
       interest: String(formData.get("interest") || ""),
       message: String(formData.get("message") || ""),
+      company: String(formData.get("company") || ""),
+      formStartedAt: formStartedAt.current,
     };
 
     try {
@@ -44,6 +47,7 @@ export default function ContactAdvertisingForm() {
 
       setStatus("success");
       form.reset();
+      formStartedAt.current = Date.now();
     } catch {
       setStatus("error");
       setError("Something went wrong. You can still email the project directly.");
@@ -67,6 +71,14 @@ export default function ContactAdvertisingForm() {
       </p>
 
       <form onSubmit={handleSubmit} className="mt-5 grid gap-3">
+        <input
+          type="text"
+          name="company"
+          tabIndex={-1}
+          autoComplete="off"
+          className="hidden"
+          aria-hidden="true"
+        />
         <div className="grid gap-3 sm:grid-cols-2">
           <Field
             label="Business name"
