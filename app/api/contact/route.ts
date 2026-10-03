@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { checkFormSubmission } from "@/lib/formSecurity";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -49,6 +50,19 @@ export async function POST(request: Request) {
     }
 
     const body = (await request.json()) as ContactPayload;
+
+    const security = checkFormSubmission(req, body as Record<string, unknown>);
+
+    if (!security.ok) {
+      if (security.silent) {
+      return NextResponse.json({ ok: true });
+      }
+
+      return NextResponse.json(
+        { error: security.error },
+        { status: security.status },
+      );
+    }
 
     // Simple honeypot. If a hidden "company" field is filled, silently accept.
     if (clean(body.company)) {
