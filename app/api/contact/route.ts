@@ -27,6 +27,8 @@ type ContactPayload = {
 
   // Honeypot
   company?: string;
+  websiteUrl?: string;
+  formStartedAt?: number;
 };
 
 function clean(value: unknown) {
