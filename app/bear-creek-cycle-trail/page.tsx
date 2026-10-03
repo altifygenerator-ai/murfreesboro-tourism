@@ -9,9 +9,9 @@ import { imagePaths, site } from "@/data/site";
 import { getBusinessesForGuide } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
-  title: "Bear Creek Cycle Trail near Lake Greeson | ATV & UTV Riding",
+  title: "Bear Creek Cycle Trail Arkansas | ATV & UTV Riding Near Lake Greeson",
   description:
-    "A practical Bear Creek Cycle Trail guide for Murfreesboro and Lake Greeson visitors planning ATV, UTV, motorcycle, camping, and outdoor recreation around Kirby, Daisy, and Bear Creek.",
+    "Plan an ATV or UTV day at Bear Creek Cycle Trail near Lake Greeson with trail-planning notes, trailer parking, camping, lodging, and Murfreesboro-area trip ideas.",
   keywords: [
     "Bear Creek Cycle Trail",
     "Bear Creek ATV Trail Arkansas",
