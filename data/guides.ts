@@ -418,9 +418,9 @@ export const nearCraterGuide: GuidePageData = {
 export const lakeGreesonGuide: GuidePageData = {
   slug: "lake-greeson",
   metadata: {
-    title: "Lake Greeson Arkansas Guide | Murfreesboro Lake Days, Swaha, Fishing & Cabins",
+    title: "Lake Greeson Arkansas Guide | Cabins, Fishing, Swimming & Boat Rentals",
     description:
-      "Plan a Lake Greeson trip near Murfreesboro, Arkansas with practical notes on boating, fishing, swimming, camping, Swaha Lodge N Marina, Dam Grill, cabins, and Crater of Diamonds weekends.",
+      "Plan a Lake Greeson trip near Murfreesboro with cabins, fishing, swimming, camping, boat ramps, marinas, Swaha Lodge N Marina, and practical lake-day planning.",
     keywords: [
       "Lake Greeson Arkansas",
       "Lake Greeson Murfreesboro Arkansas",
