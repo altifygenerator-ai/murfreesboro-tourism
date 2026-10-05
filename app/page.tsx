@@ -1,3 +1,4 @@
+import TripPaths from "@/components/ui/TripPaths";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -78,6 +79,7 @@ export default function Home() {
         primary={{ href: "/crater-of-diamonds-guide", label: "Crater of Diamonds Guide" }}
         secondary={{ href: "/lake-greeson", label: "Lake Greeson" }}
       />
+      <TripPaths current="/" />
   <RecentUpdates />
       <RiverViewCabinsHomeAd />
       <section className="section">

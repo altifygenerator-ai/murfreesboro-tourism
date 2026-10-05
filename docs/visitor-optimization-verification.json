@@ -1,0 +1,30 @@
+{
+  "source": "550ddadb7d30505c5661fa5b5eeb644287613f3d",
+  "viewportWidths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "checkedRoutes": [
+    "/",
+    "/crater-of-diamonds-guide",
+    "/day-trips-from-murfreesboro",
+    "/lake-greeson",
+    "/murfreesboro-cabins",
+    "/murfreesboro-family-trip",
+    "/murfreesboro-restaurants",
+    "/murfreesboro-shopping-supplies",
+    "/things-to-do-in-murfreesboro-arkansas",
+    "/things-to-do-near-crater-of-diamonds",
+    "/what-to-do-after-crater-of-diamonds"
+  ],
+  "responsiveChecks": 55,
+  "internalDestinations": 21,
+  "runtimeErrors": 0,
+  "missingJumpTargets": 0,
+  "overflowChecksFailed": 0,
+  "localQAUsesEmptyEventFixtures": true,
+  "liveSubmissionsTested": false
+}

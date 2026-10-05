@@ -1,3 +1,4 @@
+import TripPaths from "@/components/ui/TripPaths";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -441,6 +442,10 @@ const guideDepth: Record<string, DepthData> = {
 
 export default function GuidePage({ data }: { data: GuidePageData }) {
   const relatedBusinesses = getBusinessesForGuide(data.slug, 5);
+  const useTripPaths = [
+    "things-to-do-in-murfreesboro-arkansas", "crater-of-diamonds-guide",
+    "things-to-do-near-crater-of-diamonds", "lake-greeson", "murfreesboro-family-trip",
+  ].includes(data.slug);
   const pageUrl = `${site.domain}/${data.slug}`;
 
   return (
@@ -519,6 +524,7 @@ export default function GuidePage({ data }: { data: GuidePageData }) {
         primary={{ href: data.related[0]?.href ?? "/", label: data.related[0]?.label ?? "Start Planning" }}
         secondary={{ href: "/murfreesboro-local-businesses", label: "Local Businesses" }}
       />
+      {useTripPaths && <TripPaths current={`/${data.slug}`} links={[...data.related, { href: "/what-to-do-after-crater-of-diamonds", label: "After the Crater" }, { href: "/murfreesboro-shopping-supplies", label: "Supplies for the day" }].filter((link, index, all) => all.findIndex(item => item.href === link.href) === index)} />}
 
       <section className="section">
         <div className="container">
@@ -533,16 +539,13 @@ export default function GuidePage({ data }: { data: GuidePageData }) {
             </div>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            {data.related.map((link) => (
-              <Link key={link.href} href={link.href} className="btn-secondary">
-                {link.label}
-              </Link>
-            ))}
-            <Link href="/murfreesboro-local-businesses" className="btn-secondary">
-              Local Businesses
-            </Link>
-          </div>
+          {!useTripPaths && (
+            <div className="mt-10 flex flex-wrap gap-3">
+              {data.related.map(link => <Link key={link.href} href={link.href} className="btn-secondary">{link.label}</Link>)}
+              <Link href="/murfreesboro-local-businesses" className="btn-secondary">Local Businesses</Link>
+            </div>
+          )}
+
         </div>
       </section>
 
@@ -726,9 +729,15 @@ export default function GuidePage({ data }: { data: GuidePageData }) {
       <FAQList faqs={data.faqs} />
 
       <CTABox
-        title={data.cta.title}
+        title={data.slug === "crater-of-diamonds-guide" ? "Done digging? Choose what comes next." : data.cta.title}
         text={data.cta.text}
-        links={[
+        links={useTripPaths ? [
+          { href: "/what-to-do-after-crater-of-diamonds", label: "After the Crater", light: true },
+          { href: "/lake-greeson", label: "Lake Greeson" },
+          { href: "/murfreesboro-family-trip", label: "Things to do with kids" },
+          { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
+          { href: "/murfreesboro-restaurants", label: "Restaurants" },
+        ].filter(link => link.href !== `/${data.slug}`) : [
           { href: "/things-to-do-in-murfreesboro-arkansas", label: "Things To Do", light: true },
           { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
           { href: "/murfreesboro-restaurants", label: "Restaurants" },
