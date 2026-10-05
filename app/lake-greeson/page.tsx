@@ -5,8 +5,8 @@ import { guidePages } from "@/data/guides";
 const data = guidePages.lake;
 
 export const metadata: Metadata = {
-  title: data.metadata.title,
-  description: data.metadata.description,
+  title: { absolute: "Lake Greeson, Arkansas | Boating, Fishing & Cabin Guide" },
+  description: "Plan Lake Greeson fishing, boating, camping and cabins near Murfreesboro. Explore marina guides and pair a lake day with your Crater of Diamonds trip.",
   keywords: data.metadata.keywords,
   alternates: { canonical: "/lake-greeson" },
 };

@@ -1,3 +1,4 @@
+import TripPaths from "@/components/ui/TripPaths";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,8 +16,8 @@ const description =
   "Food, shade, Lake Greeson, kid-friendly stops, shops, cabins, and practical next steps after a Crater of Diamonds day in Murfreesboro.";
 
 export const metadata: Metadata = {
-  title,
-  description,
+  title: { absolute: "What to Do After Crater of Diamonds | Food & Lake Ideas" },
+  description: "Done digging? Find Murfreesboro restaurants, Lake Greeson, family stops, supplies and cabins. Choose a practical next stop after your diamond-field day.",
   keywords: [
     "what to do after Crater of Diamonds",
     "after Crater of Diamonds",
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: pagePath },
   openGraph: {
-    title,
-    description,
+    title: "What to Do After Crater of Diamonds | Food & Lake Ideas",
+    description: "Done digging? Find Murfreesboro restaurants, Lake Greeson, family stops, supplies and cabins. Choose a practical next stop after your diamond-field day.",
     url: pageUrl,
     type: "article",
     images: [
@@ -43,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
+    title: "What to Do After Crater of Diamonds | Food & Lake Ideas",
+    description: "Done digging? Find Murfreesboro restaurants, Lake Greeson, family stops, supplies and cabins. Choose a practical next stop after your diamond-field day.",
     images: [imagePaths.nearbyCrater],
   },
 };
@@ -240,6 +241,7 @@ export default function WhatToDoAfterCraterPage() {
           </div>
         </div>
       </section>
+      <TripPaths current="/what-to-do-after-crater-of-diamonds" heading="Done digging? Pick your next stop." />
 
       <section className="section">
         <div className="container">
@@ -461,7 +463,9 @@ export default function WhatToDoAfterCraterPage() {
         title="Keep planning your Murfreesboro trip."
         text="Start with Crater of Diamonds, then use the local guides to find food, cabins, supplies, Lake Greeson stops, and simple backup ideas that fit the rest of the day."
         links={[
-          { href: "/crater-of-diamonds-guide", label: "Crater Guide", light: true },
+          { href: "/lake-greeson", label: "Lake Greeson", light: true },
+          { href: "/murfreesboro-family-trip", label: "Family stops" },
+          { href: "/murfreesboro-shopping-supplies", label: "Supplies & local shops" },
           { href: "/murfreesboro-restaurants", label: "Restaurants" },
           { href: "/murfreesboro-cabins", label: "Cabins & Stays" },
         ]}

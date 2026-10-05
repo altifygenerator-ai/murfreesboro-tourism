@@ -6,9 +6,8 @@ import { guidePages } from "@/data/guides";
 const data = guidePages.crater;
 
 export const metadata: Metadata = {
-  title: "Crater of Diamonds Guide | What to Bring, Hours & Murfreesboro Tips",
-  description:
-    "Plan a Crater of Diamonds State Park visit with practical Murfreesboro tips for what to bring, kids, heat, mud, food, current park details, Lake Greeson, and what to do after digging.",
+  title: { absolute: "Crater of Diamonds Guide | What to Bring & Trip Tips" },
+  description: "Plan a Crater of Diamonds visit with packing tips, official hours and admission links, family advice and Murfreesboro food, supplies and stays.",
   keywords: data.metadata.keywords,
   alternates: { canonical: "/crater-of-diamonds-guide" },
 };

@@ -193,7 +193,7 @@ export const craterGuide: GuidePageData = {
   },
   hero: {
     eyebrow: "Crater of Diamonds Guide",
-    title: "Come ready for dirt, sun, slow searching, and a story worth telling.",
+    title: "Crater of Diamonds: dirt, sun, and a story worth telling.",
     text:
       "Crater of Diamonds is the stop Murfreesboro is known for. It is also a real outdoor day, so the trip goes better when you plan for heat, mud or dust, tired kids, and a good meal afterward.",
     image: imagePaths.crater,
@@ -433,7 +433,7 @@ export const lakeGreesonGuide: GuidePageData = {
   },
   hero: {
     eyebrow: "Lake Greeson Guide",
-    title: "The lake side of Murfreesboro is worth planning on its own.",
+    title: "Lake Greeson: plan the lake side of your Murfreesboro trip.",
     text:
       "Lake Greeson gives the Murfreesboro trip fishing, boating, swimming, cabins, campgrounds, marina stops, and a slower kind of day after the diamond field.",
     image: imagePaths.lake,
@@ -760,7 +760,7 @@ export const familyGuide: GuidePageData = {
   },
   hero: {
     eyebrow: "Family Trip Guide",
-    title: "A good family trip here needs water, snacks, and a plan that can bend.",
+    title: "Murfreesboro with kids: a family trip around diamonds and the lake.",
     text:
       "Murfreesboro can be a great family weekend when you plan for the real stuff: dirt, heat, wet clothes, hungry kids, lake time, and knowing when to call the day good.",
     image: imagePaths.family,

@@ -1,0 +1,19 @@
+.paths {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(45, 42, 38, 0.12);
+  background: var(--bg-card);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+.links a {
+  min-height: 44px;
+  max-width: 100%;
+}
+.links a:focus-visible {
+  outline: 2px solid var(--color-rust);
+  outline-offset: 4px;
+}

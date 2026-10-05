@@ -1,3 +1,4 @@
+import TripPaths from "@/components/ui/TripPaths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,10 +11,8 @@ import { imagePaths, site } from "@/data/site";
 import { localBusinesses } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
-  title:
-    "Murfreesboro Cabins, RV Parks & Places To Stay Near Crater of Diamonds",
-  description:
-    "Find cabins, RV parks, campgrounds, lake stays, and practical lodging tips for Murfreesboro, Arkansas near Crater of Diamonds and Lake Greeson.",
+  title: { absolute: "Cabins Near Crater of Diamonds | Murfreesboro, AR Stays" },
+  description: "Compare cabins, RV parks and camping around Murfreesboro, Crater of Diamonds and Lake Greeson. Find local lodging links and plan your family weekend.",
   keywords: [
     "Murfreesboro Arkansas cabins",
     "cabins near Crater of Diamonds",
@@ -99,7 +98,7 @@ export default function CabinsPage() {
       />
       <Hero
         eyebrow="Cabins & Places To Stay"
-        title="Pick a stay that fits the dirt, water, gear, and tired people."
+        title="Murfreesboro cabins: stays for diamond and lake trips."
         text="The right place to stay can make a Murfreesboro trip a lot easier, especially when your plans include Crater of Diamonds, Lake Greeson, kids, pets, fishing gear, wet clothes, or a trailer."
         image={imagePaths.cabins}
         primary={{
@@ -111,6 +110,7 @@ export default function CabinsPage() {
           label: "Lake Greeson",
         }}
       />
+      <TripPaths current="/murfreesboro-cabins" />
 
       <section className="section">
         <div className="container">
@@ -346,6 +346,13 @@ export default function CabinsPage() {
           </div>
         </div>
       </section>
+
+      <TripPaths current="/murfreesboro-cabins" heading="Staying overnight? Plan the rest of the trip." links={[
+        { href: "/crater-of-diamonds-guide", label: "Prepare for the Crater" },
+        { href: "/murfreesboro-restaurants", label: "Find local food" },
+        { href: "/lake-greeson", label: "Explore Lake Greeson" },
+        { href: "/murfreesboro-family-trip", label: "Plan a family trip" },
+      ]} />
 
       <FindAPlaceBookingCTA
         heading="Still looking for the right Arkansas stay?"

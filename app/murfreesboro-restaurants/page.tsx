@@ -1,3 +1,4 @@
+import TripPaths from "@/components/ui/TripPaths";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,8 +13,8 @@ import { localBusinesses } from "@/data/localBusinesses";
 const data = guidePages.restaurants;
 
 export const metadata: Metadata = {
-  title: data.metadata.title,
-  description: data.metadata.description,
+  title: { absolute: "Murfreesboro, AR Restaurants | Food After Crater of Diamonds" },
+  description: "Find Murfreesboro restaurants and food near Lake Greeson. Plan a meal after Crater of Diamonds with local listings, phone numbers and directions.",
   keywords: data.metadata.keywords,
   alternates: { canonical: "/murfreesboro-restaurants" },
 };
@@ -91,7 +92,7 @@ export default function RestaurantsPage() {
       />
       <Hero
         eyebrow="Restaurants & Food"
-        title="Know where you might eat before everybody is hot, dusty, and done."
+        title="Murfreesboro restaurants: find food after a day of digging."
         text="Food around Murfreesboro is about timing. Pick a place before the diamond field wears everyone down, and keep a backup in mind for lake days, seasonal hours, and busy weekends."
         image={imagePaths.damGrill}
         primary={{
@@ -103,6 +104,7 @@ export default function RestaurantsPage() {
           label: "Lake Greeson",
         }}
       />
+      <TripPaths current="/murfreesboro-restaurants" />
 
       <section className="section">
         <div className="container">
@@ -342,6 +344,13 @@ export default function RestaurantsPage() {
           </div>
         </div>
       </section>
+
+      <TripPaths current="/murfreesboro-restaurants" heading="Where next after your meal?" links={[
+        { href: "/what-to-do-after-crater-of-diamonds", label: "After-digging ideas" },
+        { href: "/lake-greeson", label: "Plan some lake time" },
+        { href: "/murfreesboro-cabins", label: "Find a place to stay" },
+        { href: "/murfreesboro-family-trip", label: "Family stops" },
+      ]} />
 
       <CTABox
         title="Know another local food stop visitors should know about?"
