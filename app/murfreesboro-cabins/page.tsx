@@ -5,6 +5,7 @@ import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import FindAPlaceBookingCTA from "@/components/FindAPlaceBookingCTA";
+import WeeklyFindAPlaceStays from "@/components/WeeklyFindAPlaceStays";
 import JsonLd from "@/components/JsonLd";
 import { imagePaths, site } from "@/data/site";
 import { localBusinesses } from "@/data/localBusinesses";
@@ -346,6 +347,8 @@ export default function CabinsPage() {
           </div>
         </div>
       </section>
+
+      <WeeklyFindAPlaceStays />
 
       <FindAPlaceBookingCTA
         heading="Still looking for the right Arkansas stay?"
