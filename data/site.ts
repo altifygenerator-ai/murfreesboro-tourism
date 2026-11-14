@@ -96,6 +96,7 @@ export const navLinks = {
   ],
 
   localGuide: [
+    { href: "/events", label: "Events Calendar" },
     {
       href: "/murfreesboro-local-businesses",
       label: "Local Businesses",
