@@ -71,7 +71,7 @@ export default async function MurfreesboroEvents() {
     "@context": "https://schema.org",
     "@type": "Event",
     name: event.title,
-    startDate: event.start_date + (event.start_time ? "T" + event.start_time.slice(0, 5) + ":00-06:00" : ""),
+    startDate: event.start_date + (event.start_time ? "T" + event.start_time.slice(0, 5) + ":00" : ""),
     ...(event.end_date ? { endDate: event.end_date } : {}),
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
