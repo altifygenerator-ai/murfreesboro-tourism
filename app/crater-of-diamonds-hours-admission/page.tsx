@@ -10,7 +10,7 @@ const officialParkUrl =
 export const metadata: Metadata = {
   title: "Crater of Diamonds Hours & Admission | Murfreesboro, Arkansas",
   description:
-    "Check Crater of Diamonds State Park hours, diamond-field admission, tool rental prices, pet rules, water-park season, and practical Murfreesboro planning details before you go.",
+    "Plan your dig at Crater of Diamonds State Park. Check diamond field hours, holiday closures, admission prices, and what it costs to rent a screen or shovel.",
   keywords: [
     "Crater of Diamonds hours",
     "Crater of Diamonds admission",
