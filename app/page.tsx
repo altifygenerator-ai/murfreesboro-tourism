@@ -72,8 +72,8 @@ export default function Home() {
 
       <Hero
         eyebrow="Murfreesboro Arkansas Guide"
-        title="Plan around diamonds, Lake Greeson, cabins, and small-town Arkansas days."
-        text="A practical visitor guide for Murfreesboro, Crater of Diamonds State Park, Lake Greeson, Swaha, Dam Grill, Ka-Do-Ha, restaurants, cabins, RV stays, and nearby southwest Arkansas day trips."
+        title="Discover Murfreesboro, Arkansas."
+        text="Dig for diamonds, spend an afternoon at Lake Greeson, and find local food, cabins and the stops worth making along the way."
         image={imagePaths.heroHome}
         primary={{ href: "/crater-of-diamonds-guide", label: "Crater of Diamonds Guide" }}
         secondary={{ href: "/lake-greeson", label: "Lake Greeson" }}
@@ -85,8 +85,8 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <SectionHeading
               eyebrow="Start Here"
-              title="Murfreesboro works best when the trip has a simple anchor."
-              text="Most visitors start with Crater of Diamonds, then decide whether the rest of the trip should be lake time, food, cabins, camping, or a nearby day trip. This guide is built to help you make that choice without turning the weekend into a giant checklist."
+              title="Start with Crater of Diamonds. See what’s nearby."
+              text="The diamond field draws people here. Let the rest of the day lead you to Lake Greeson, a local restaurant, or a quieter place to stay."
             />
 
             <div className="grid gap-4 sm:grid-cols-2">
