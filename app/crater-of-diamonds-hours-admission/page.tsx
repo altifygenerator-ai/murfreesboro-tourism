@@ -74,7 +74,7 @@ export default function CraterHoursAdmissionPage() {
             name: "Crater of Diamonds Hours & Admission",
             description: metadata.description,
             url: `${site.domain}${pagePath}`,
-            dateModified: "2026-09-20",
+            dateModified: "2026-11-13",
             isPartOf: {
               "@type": "WebSite",
               name: site.name,
@@ -115,7 +115,7 @@ export default function CraterHoursAdmissionPage() {
       <section className="section bg-white/30">
         <div className="container">
           <div className="max-w-4xl">
-            <p className="hero-eyebrow">Last checked September 20, 2026</p>
+            <p className="hero-eyebrow">Hours and admission checked November 13, 2026</p>
             <h1 className="mt-3 text-5xl font-semibold leading-tight text-[color:var(--color-text)] md:text-6xl">
               Crater of Diamonds hours, admission, and tool rentals.
             </h1>
@@ -208,7 +208,7 @@ export default function CraterHoursAdmissionPage() {
               <p className="hero-eyebrow">Diamond Springs Water Park</p>
               <h2 className="mt-2 text-3xl font-semibold text-[color:var(--color-text)]">Seasonal, not a year-round promise.</h2>
               <p className="mt-4 leading-8 text-[color:var(--color-muted)]">
-                The official park page lists the water park as seasonal from Memorial Day through Labor Day, generally 11 a.m. to 4 p.m. and closed Mondays and Tuesdays. It also warns that late-summer staffing can reduce operation to weekends. Because September 20 is after Labor Day, do not plan a 2026 fall trip around the water park unless the park says otherwise.
+                The official park page lists the water park as seasonal from Memorial Day through Labor Day, generally 11 a.m. to 4 p.m. and closed Mondays and Tuesdays. It also warns that late-summer staffing can reduce operation to weekends. The water park is closed for its regular season in November. Do not plan a late-fall or winter trip around swimming unless the park specifically announces another opening.
               </p>
             </div>
 
