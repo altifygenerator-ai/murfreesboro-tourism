@@ -110,6 +110,7 @@ const localGuideRoutes: SitemapRoute[] = [
 ];
 
 const utilityRoutes: SitemapRoute[] = [
+  { path: "/events", priority: 0.88, changeFrequency: "daily" },
   { path: "/contact", priority: 0.55, changeFrequency: "monthly" },
 ];
 
