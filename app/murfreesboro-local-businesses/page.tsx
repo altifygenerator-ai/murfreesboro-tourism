@@ -1,3 +1,4 @@
+import { approvedCityListings, mergeApprovedListings } from "@/lib/nstp-business-sync";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import JsonLd from "@/components/JsonLd";
 import { imagePaths, site } from "@/data/site";
-import { businessCategories, featuredBusinessPlaceholder, localBusinesses, type LocalBusinessCategory } from "@/data/localBusinesses";
+import { businessCategories, featuredBusinessPlaceholder, localBusinesses as baseLocalBusinesses, type LocalBusinessCategory } from "@/data/localBusinesses";
 
 export const metadata: Metadata = {
   title: "Murfreesboro Local Businesses | Food, Cabins, Shops & Outdoor Stops",
@@ -33,7 +34,10 @@ const categoryNotes: Record<LocalBusinessCategory | "all", string> = {
   service: "Visitor-friendly local services that can help when travel plans, vehicles, rentals, or outdoor weekends need support.",
 };
 
-export default function LocalBusinessesPage() {
+export const revalidate = 300;
+export default async function LocalBusinessesPage() {
+  const localBusinesses = mergeApprovedListings(baseLocalBusinesses, await approvedCityListings("Murfreesboro"));
+
   return (
     <main>
       <JsonLd
