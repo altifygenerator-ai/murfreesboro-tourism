@@ -1,3 +1,4 @@
+import NstpReachTracker from "@/components/NstpReachTracker";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
@@ -165,6 +166,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <Footer />
         <Analytics />
+        <NstpReachTracker />
       </body>
     </html>
   );
