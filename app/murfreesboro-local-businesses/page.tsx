@@ -6,6 +6,7 @@ import Hero from "@/components/ui/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABox from "@/components/ui/CTABox";
 import JsonLd from "@/components/JsonLd";
+import TrackedBusinessLink from "@/components/TrackedBusinessLink";
 import { imagePaths, site } from "@/data/site";
 import { businessCategories, featuredBusinessPlaceholder, localBusinesses as baseLocalBusinesses, type LocalBusinessCategory } from "@/data/localBusinesses";
 
@@ -211,9 +212,14 @@ export default async function LocalBusinessesPage() {
                             </Link>
                           )}
                           {business.href && (
-                            <a href={business.href} target="_blank" rel="noopener noreferrer" className="text-sm font-black text-[color:var(--color-accent)]">
+                            <TrackedBusinessLink
+                              href={business.href}
+                              business={business.name}
+                              category={business.category}
+                              className="text-sm font-black text-[color:var(--color-accent)]"
+                            >
                               Official site →
-                            </a>
+                            </TrackedBusinessLink>
                           )}
                         </div>
                       </article>
