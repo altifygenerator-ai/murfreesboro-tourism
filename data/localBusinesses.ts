@@ -794,6 +794,32 @@ export const localBusinesses: LocalBusiness[] = [
     "things-to-do-in-murfreesboro-arkansas",
   ],
 },
+  {
+    name: "Red Dirt Property Services LLC",
+    type: "Property Cleanup • Dirt Work • Brush Hogging • Hauling",
+    category: "service",
+    area: "Serving Murfreesboro & Pike County",
+    description:
+      "A local southwest Arkansas crew offering property cleanups, junk hauling, driveway and culvert work, brush hogging, tree cleanup, cabin cleanouts, and light demolition for Murfreesboro-area properties.",
+    href: "https://www.reddirtpropertyservicesar.com/",
+    phone: "870-828-2562",
+    note: "Contact the crew for job availability and a quote.",
+    lastVerified: "2026-11-17",
+    guideSlugs: ["murfreesboro-local-businesses"],
+  },
+  {
+    name: "Lyn & Lili's Tidy House",
+    type: "Home Cleaning • Rental Turnovers • Move-Out Cleaning",
+    category: "service",
+    area: "Based near Amity & Glenwood; surrounding areas by request",
+    description:
+      "Locally owned cleaning and organization service for homes, cabins, short-term rentals, and small businesses. Offers standard and deep cleaning, rental turnovers, move-out cleaning, organizing, and senior household help.",
+    href: "https://www.lynandlilistidyhouse.com/",
+    phone: "870-260-4536",
+    note: "Check with the team before scheduling to confirm Murfreesboro service availability.",
+    lastVerified: "2026-11-17",
+    guideSlugs: ["murfreesboro-local-businesses"],
+  },
 ];
 
 export const businessCategories: { key: LocalBusinessCategory | "all"; label: string }[] = [
